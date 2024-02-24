@@ -12,6 +12,8 @@
 
 #### Dosen Pengampu : Dr. Ferry Astika Saputra ST, M. Sc
 
+##
+
 ## No 1 : Buatlah tulisan tentang langkah-langkah instalasi sistem operasi Debian. Anda bisa menggunakan aplikasi virtualisasi seperti VirtualBox, VMWare Player, Vmware Fusion (MAC), dls. Kebutuhan sistem adalah sebagai berikut :
 
 - CPU : 2 core
