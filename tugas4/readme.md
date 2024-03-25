@@ -16,13 +16,11 @@ Dosen Pengampu : Dr. Ferry Astika Saputra ST, M. Sc
 
 # Tugas Baca tentang Ekosistem Internet (Materi sudah diunggah di Ethol). Tuliskan pendapatmu tentang bagaimana Internet bekerja (tugas pribadi)!
 
-1.  Cara Internet Bekerja
-
-Apa Itu Internet?
+#### Apa Itu Internet?
 
 Internet adalah jaringan komputer global yang terhubung menggunakan protokol standar komunikasi, yaitu Transmission Control Protocol/Internet Protocol (TCP/IP). Jaringan ini memungkinkan komputer di seluruh dunia untuk berkomunikasi dan berbagi informasi satu sama lain.
 
-Bagaimana Internet Bekerja?
+#### Bagaimana Internet Bekerja?
 
 Langkah 1: ISP dan Browser
 
@@ -44,13 +42,37 @@ Langkah 5: Pertukaran Data
 
 Setelah komputer Anda terhubung ke server, data dikirim kembali ke komputer Anda dan ditampilkan di browser sebagai halaman web. Proses ini terjadi sangat cepat berkat infrastruktur jaringan internet yang canggih.
 
-Infrastruktur Fisik Internet
+#### Infrastruktur Fisik Internet
 
 Internet terdiri dari kabel, serat optik, satelit, dan infrastruktur nirkabel yang menghubungkan komputer di seluruh dunia. Data dan informasi dikirimkan melalui jaringan ini dalam bentuk paket-paket kecil, memungkinkan komunikasi dan akses informasi dari mana saja dan kapan saja.
 
-Manfaat Internet
+##### Pengembangan Standar Terbuka (Open Standards Development)
 
-Internet telah merevolusi cara kita berkomunikasi, belajar, bekerja, dan bermain. Dari browsing web, berkomunikasi dengan orang jarak jauh, mengunduh gambar dan video, hingga bermain jejaring sosial dan berbelanja online.
+Standar terbuka memungkinkan interoperabilitas antar sistem yang berbeda dan memastikan bahwa teknologi dapat berkembang tanpa terhalang oleh batasan vendor atau platform tertentu.
+
+##### Penamaan dan Penugasan Alamat (Naming and Addressing)
+
+Organisasi seperti IANA (Internet Assigned Numbers Authority) dan ICANN (Internet Corporation for Assigned Names and Numbers) memainkan peran penting dalam penugasan alamat IP dan pengelolaan domain tingkat atas.
+
+##### Pengembangan Kebijakan (Policy Development)
+
+Kebijakan lokal, nasional, regional, dan global dibentuk untuk mengatur berbagai aspek internet, termasuk privasi, keamanan, dan akses.
+
+##### Pendidikan dan Pengembangan Kapasitas (Education and Capacity Building)
+
+Inisiatif pendidikan dan pelatihan diperlukan untuk membangun keterampilan dan pengetahuan yang diperlukan untuk mendukung pertumbuhan dan inovasi dalam ekosistem internet.
+
+##### Pengguna (Users)
+
+Pengguna internet meliputi individu, bisnis, pemerintah, dan organisasi lainnya yang semuanya terhubung dan berinteraksi dalam ekosistem ini.
+
+##### Layanan dan Operasi Bersama (Shared Global Services and Operations)
+
+Layanan bersama seperti DNS (Domain Name System) dan infrastruktur jaringan memungkinkan pertukaran data yang efisien dan stabil di seluruh dunia.
+
+##### Pengembangan Kebijakan Multilateral (Multilateral Policy Development)
+
+Institusi multilateral dan organisasi seperti Internet Society berkontribusi pada pembentukan kebijakan yang mempengaruhi internet secara global.
 
 ##
 
@@ -79,43 +101,43 @@ Dari gambar dalam Proses Cara Kerja DNS secara Iterative dan Recursive berbeda, 
 
 1.  Melakukan install bind9 bind9-doc bind9-dnsutils → sudo apt install bind9 bind9-doc bind9-dnsutils
 
-![](https://lh7-us.googleusercontent.com/xETvp1UD3CZJcrHJ-CgYiqJgNORER_SmpY8DQRQcZ8vlnN4jGbAiXN3cbMspIJP8d6PkLnB-rdIch46E2mIMPtFfbgduwfFMcpFFeErFY6wnZ_Orn2ygFSMdaOQHxtE_15DwuIJJnLN-fmJjgAme1SQ)
+![](https://lh7-us.googleusercontent.com/I_-OzrX74gD4EV9JdJe9pFFUOoTg8TakHjQITVe5Q7ya19pJontwK5FI6_gwlVTEsma5t8whB9lgvUK9JziE0EFiXZ85VsxfQcauaduFICws1K1MAxipjKm7IA1QRNlo48nZJ1nO4sq6H3kGfj9PWYE)
 
 2.  Cek apakah sudah ada directory /etc/bind
 
-![](https://lh7-us.googleusercontent.com/RRsumo59NaOeyWVR9y7hdSwb-y8icyue0LIop5DVZC3x5c3Hg1GsCpUZ5wINiQ3Ef-3Fi8iBZ8atTVDM2SKtAbyx1sugo7FpRJUas1O_A1fWX4LbGkBsr6KlamS1j-rcT_xKvPEq1q80eTOcJLBSl4s)
+![](https://lh7-us.googleusercontent.com/ML6TIo0qyxG80wvAJVHwR8TnRExjJnmlrnHMTpuHbotUnNnuzz7m0XWtyD2Pd4_FnU0RNDIVBZyg0fv4_G0V7X3F6hYn83gBR3AtBvtRFkLrB05J4t2BB7mrhBuEkcPOoXmxTBMtEAAj0-2zQfvNT1w)
 
 3.  Melakukan konfigurasi pada named.conf → sudo nano named.conf
 
-![](https://lh7-us.googleusercontent.com/EOEvvbV5LOutmbiyY4cn1FqtOICwrO8eRUjBlf-600Ct8_5R4TB1XnDmps6a9NM6xBAu3EpoMxL0SYs-apYVzOL2bh1fsW-qmJ7nj3L7LDpU1gONsW5HcVCf8kqKVk3RJewasrzvI4tCE_BtLRHI3PY)
+![](https://lh7-us.googleusercontent.com/KNWlPGolwN-0ge5DquAQe0As5VIS8tmuwh439kZJIpahWJlYORUSdWkukUPmbVsLL4hi53XpDKDqcnabIfM8_GaX6nDGtUurxnh1-OfgO5ZbVH0JNqabk7ELmyRt7jO2ngiHWl9FQQFT2UtAfIX4pRI)
 
 - Penjelasan konfigurasi
 
-![](https://lh7-us.googleusercontent.com/8EOWSeEg36g_jvtKS3R4dhV1NSelsSNieZlTO5lnJA7oFDv4C8o0P0vZf-UEjLInmbyvb1Zo2WVCnEAI-S9GWlIuBXqV2MyaosSRq4UG1YSmGcTTSYNkZYj20Ddb9fqliFz7QKaQxCoUl_pUhYOIZVM)
+![](https://lh7-us.googleusercontent.com/kXuqh2Kk0zr__Fba1pjVSpFGuArtHaAPuAyOtxo5RHRLNrx_D6TvhmWD8gNUOzze0euwD4Xnr-HxLXQFgXin9xGpNxr1y3Ob0Xhs588g0LhzD_NkhYj7MCgj9FCsw5OXv3DjVRSl8kwaaO4M_p7J6ac)
 
 Melakukan konfigurasi ACL ( Access List ), dinamakan internal,
 
-![](https://lh7-us.googleusercontent.com/8Aks8uNge4-4amc2G-ryNllnVKKR2lpJXDTOuFH9ovfjAbmYVhkkMgrHd9GBUuXCv11Qnv93d9eJgz1ZNqwc82kTou9C6og_dN_MTyCH_8kwu50vnhQAG9nv6LNGx96R27dM3ksto1vLmvJe5ZzLGBk)
+![](https://lh7-us.googleusercontent.com/DX6KHTXuNvcOSrlcjgp1UzfVyeEVaJd4lEo5ZnHymWV-kx8SBBofamy88f2FW594Wc_DY7osxBxIUfAjDNAx7EPfeKeL1YJJ1U7VAgKV7pUm_NirJETiYI7TEASP1bNc_J7Zq54nwh_KD562O_7giJI)
 
 Melakukan Konfigurasikan saluran komunikasi untuk Administrative BIND9 dengan rdnc. Secara default, key ada di file rndc.key dan digunakan oleh rndc dan bind9 di localhost
 
 4.  Melakukan konfigurasi pada named.conf.options → sudo nano named.conf.options
 
-![](https://lh7-us.googleusercontent.com/lmXtrcjVIEhYkAciY9RtXRg_RnCsk1TF4nDxTJBgbBylS2yIlhmVu9I1Wg2aLhjB6REIq1rC5xOzRuuk057V_9cwwjWMuOEYqVSiCZj8zNfp5CQ1CA4t4BtzSTomiX71r-u-SA8TCoIz4NSM7Fyi1bI)
+![](https://lh7-us.googleusercontent.com/3pJ5pgLtDWEw0sdfPZ4sDQ4PJTCPbmFNSEf_y20BwEhjGZQm3wdQ-TCt_OnwwpjSWU8gLsPafV1sjfOBSnKhlw5yczSf-sb504aPXYFA6VB2WXUTmEGUljwLu0jG-aZ2WqKyCoOLMJBcblxOT2t1ezs)
 
-![](https://lh7-us.googleusercontent.com/iAUg5pSZBmJ2ieZgeCMKV4CQ_DEmbans-KE1BP-iI-8Pm0ygoFm0kUt6lXjC_gVkCeTLuO5mD2KUQRlA93VEeGwhLhY49PJEFz6WUk1EkVmXlp2Ql4vkBLxnKgDwU0cHlDwksyN38qUpMFxLzhEiqDs)
+![](https://lh7-us.googleusercontent.com/BB4GBlE0jkeOb6wtlEHM_fA9EayAFuBLSigz9cPBhP10aKPReN2I6TuDlqjE_qkHJuyxHW32zKAbQRl3ylaNMD_ssDYzJNS-2R0mHAw-30teXkaujYH5N3FunU7nmmBa6VGUAmXDUxESi20BGPNkVrA)
 
 - Penjelasan konfigurasi :
 
-![](https://lh7-us.googleusercontent.com/aZcXAtIJYOpDi-yLYXvmtIpaA_wVqHllyGPbHYCHvoCbqaZD9zNyy7gTOJYwrq16cN4QBr6U6i78fELBrToK0QHHDHO43Aicb5v0SCXcDe6W-UdKDs9fOt9GHC8K7vfjNwMDrRmaoscpeRinjuL2HJY)
+![](https://lh7-us.googleusercontent.com/_82X3LkffLry2NWNPB6dUC0XK2Zlnr6Zn96FJewxwbmEc5GH9Fcn43yt_dvaleuiVarCn27HqR_dTjMFVVA6ehjm8CMS4NLCY51lB6V4Scijc2j0B4ZPl1q0JqRFfAneaiYpjRLnnpynytPiiBaeyyU)
 
 Mengatur fowarder ke nameserver pens. Maka akan mengirim permintaan ke 202.9.85.3 dan 202.9.85.4 jika servernya tidak tahu cara mengatasinya.
 
-![](https://lh7-us.googleusercontent.com/oEmi7WEuPc0yuxYe3nAk5RgaPxxOUc7ySsNyRJqt-l-MArDrpWFjixH7VYEjjDXaZPiz6c-pNfTRvDtMeI00jDzTw8LHlg1PuNLbKMVF3clZkbTysqKvSczkj9vS_sxLy6dHygjCXQewwQDzNvP5OIQ)
+![](https://lh7-us.googleusercontent.com/I9WVI5Psd3FZ1mBhj5bAAxM1aaHBXufXurNP8ZSZCpuRwJFCz-yZgWjSegRgUm9d1EJc-DZ_uCDPdutERtClxBfYNnYQKuYA8A9Thk3Sbu61lUbjpizJJ_cF_3cJAfkJ3TgDQa65EA9VH4_68EAcB24)
 
 Melakukan konfigurasi tersebut mengikuti spesifikasi RFC1035. dalam konfigurasi BIND DNS server menetapkan bahwa server DNS tidak akan mengembalikan respons NXDOMAIN (No Such Domain) yang otentik saat mencari domain yang tidak ada dalam zona yang dikelola oleh server tersebut.
 
-![](https://lh7-us.googleusercontent.com/iFOHKZXKR-e1h6WSgWExW_6m9G6_GPqpFJ26PCCzurlfExyWq2eHcBe3B5sl7y5YDTb5xhdcFlKa0yD0FgVifaRqm_qM7Qwl-teZh9zALNxkDlLoyIOp44lWa5mwwYaJ0hvAo1GKrxEH09I_z_wu7RI)
+![](https://lh7-us.googleusercontent.com/avFYFoemjGNMH2ZtqkJ2nZyC_0vfdqeZ68ybOuva9cg9USonl3MRgqj6ZNzUIvryTEnfRndNxJK-y7yxyx8bkZC32N79FIntcfhvDnweIGjeR1IzymDLV6y4uyd9eO3sUs06xyrE-poJEp_oJVt0lRU)
 
 Mengganti listen on ke ip address kelompok 6 (192.168.6.10)
 
@@ -129,7 +151,7 @@ Membuat versi bind versi none
 
 5.  Melakukan konfigurasi named.conf.local → nano named.conf.local
 
-![](https://lh7-us.googleusercontent.com/ukGcRnfqrLdTKq9ax9MGM2VWvwF838lDsk1B3H5QJfQWM83sbMTCk_V6EO8rkPfuumEP8JvmBqd4R7xlIVv6FtXUR7xZHoWl72K2wB8TpxcRnQrl-7PYrmW0BeC112rzFD1IxWqKhkOQ21w1n0yhNos)
+![](https://lh7-us.googleusercontent.com/llEbRVP2G-EAdh6Un6yBFZoC4H_JqeO5YTlR6RfW2cacI19PV99rmWLmxBODfuPn5kKXCF97mvE-AI_uCruv6dpBq7lsM1oZwnZJnIZ4ygOatQVhrDGsGTHAm-sLhMGgck9SLMfRvQxja8LD5LmUgFY)
 
 Penjelasan konfigurasi :
 
@@ -139,17 +161,17 @@ Mengkofigurasi invers zone yang memetakan dari ip ke nama
 
 6.  Mengecek utilitas → sudo named-checkconf /etc/bind/named.conf, apakah ada error/issues
 
-![](https://lh7-us.googleusercontent.com/etj7Ip7oIWZuRylIq_GEgmEVKq5osbaTptfCRReXj3id29g0BTWmHLgRBijDJzhNy4QNt4VyiD-Hu_WGi312okihP3uBeaB50198NpI269wCTe2x586U99MmUCbeiO5EhSCgnVvU8B0M-U5ssJvvjb8)
+![](https://lh7-us.googleusercontent.com/Wyjr1Wla5n6IpXU7sDJ0xlWpHmTcvQPwwTzUQiLSjT60OhNEtFuOTS7XLMjVkT0KAyH0fcAJeXIo1l9f8Mc2BKWJBjKXosFAuefRTzXe6fKZaHevHDRAt8hsla1WpkeWDV-A-QlEt4SwSHUCaxoPb8w)
 
 Tidak ada error/issues
 
 7.  Berpindah ke file zone dan mengecek isi dari file zone
 
-![](https://lh7-us.googleusercontent.com/Ye5SEFBNzJPrzvx_AOA2e2oTA1JdvILhtcrJdRM3FeVW1qWtLNhEAbO-vYyEqbwzswETFnp0c8pEyVlmLzhDAIfm73XYKKTBLJGGplrrIoR3Xb7Mc61OHHXnwfCdQnIKF5xHl-ymxrb8jHRsDWLWSfE)
+![](https://lh7-us.googleusercontent.com/EZRAsnOShg3crhHywrX9SvWWAYdc54G2JNvQx5E-4aMPEYrQEP_HQQx4cot1elsdI47xfw4kfHabQpaZ5EtEOfCGDtC-ibLhUpijZ6j5IWuQ4aS4WsaOQi2TQqbzEwGIn_RO0rYqHdCcHDYzFp5qWAc)
 
 8.  Buat file db sesuai yang sudah ada di konfigurasi zone file sebelumnya db.kelompok6.local → sudo nano db.kelompok6.local
 
-![](https://lh7-us.googleusercontent.com/UYSkhCcTBG89qh5rVL4jZdIGt6lix1AwevDD01WoAEFVy-_ZqSC6bR_zKNquGv1Kh_hqbItxjQynA1ex8y1COx3sQNxJwmhZ1BJp1us4JAO4KHZXTTHgAEi4gsbks5WxYUs4iCWYJFEOs11kYffVbiw)
+![](https://lh7-us.googleusercontent.com/z6HFV2lFfnTBVzhNPUvfGFsGW0ceSzh1H9lb7KBiYyiWPAPRmPoks4VT4AXksg55XCX4UL7H749W7Kl04kQD_E16wQVrFN8530_h0eMYBOzFC9GQsXfczCoJdbzj2v6jClS5PwmVGtzUW8XOPnoRliA)
 
 Penjelasan :
 
@@ -163,7 +185,7 @@ Mengset www dan main memiliki CNAME ns
 
 9.  Buat file db invers sesuai yang sudah ada di konfigurasi zone file sebelumnya db.kelompok6.local.inv → sudo nano db.kelompok6.local.inv
 
-![](https://lh7-us.googleusercontent.com/QqJlhDKN81BNNek9_feMv07FdVqAvlrP_TW_e8Kz3etz0y5E5Hq5CkgeymMTU4uXYoKw0t3dsFI4x0u7mu2jCuR7fCxyEPos9A0Kye7-C3cijjx1bFxbURboiQvJ-AhakmpE62amxluhfJCRrnoejv0)
+![](https://lh7-us.googleusercontent.com/JbWuIro2jcO5cm9BgpLLMhlPNKw12RZlG9mqLtdHicwsOcwdQ-n11lpRDq1qxCZ6Vxf34z1lT1OgYmGlTmd7Y0xN0mgn4jhk4VEddKuYvnTezoaaAR7PNIKnl_bKLqK-0eRi6PkSYsP4M7Lco5YlT0U)
 
 Penjelasan :
 
@@ -171,7 +193,7 @@ Mengatur internet pointer ke ns.kelompok6.local
 
 10. Melakukan named-checkzone kelompok6.local db.kelompok6.local dan named -checkzone 6.168.192. inaddr-arpa db.kelompok6.local.inv
 
-![](https://lh7-us.googleusercontent.com/PLjpL-36isEcKr7Fyhy7JETUEEBqM-ILbBtHMOfO4lhoVysKZd_-Ao5xN58r9Rls4qvH891wKJt5YsFzN8AIYUPo_eI6kjGt7jp0JOXEN62ToNcWE8LD4kBF0bDOXrzj1zlXxn9CWtKwOQL4KgBtX9U)
+![](https://lh7-us.googleusercontent.com/FGJyzAWizJbSyktgzxQ7XsEmPZBgJE18pR8yk2cx0DJhzPTOgI509rpHnfBdvapu59JjvySJohmB0b-i1_k77A1nPfM0cGttQNpHRfLgSNev95k1tUmw0b6desqyjnCtFvJ_t25ACM0NN_6bco7YXZs)
 
 Penjelasan :
 
@@ -179,7 +201,7 @@ Memverifikasi bahwa file zona DNS Anda ditulis dengan benar sebelum menggunakann
 
 11. Melakukan konfigurasi /etc/resolv.conf → sudo nano /etc/resolv.conf
 
-![](https://lh7-us.googleusercontent.com/HqJlqvbsvXZnV40U4yuKsVgSwHzxN3Mrckcbr1z0_3QnpXfmFQYfzL_Jli9KvMejUzRLYWkKT3uEqxJjQgsxsf9rZLauFd0D6Bm0NpSL0teaRXMHXRyMyOLCX5hnRFmf-vrOAv2TLHF1C-SYWIDZJfQ)
+![](https://lh7-us.googleusercontent.com/9Ups0iUqirtLmYj-m7ovQh-0AtAU7UzleI5-FICIeoYZZYnxnz27UDc0tOYU7Es5iRIikHAUBg6LmAc6ei9Yb4Utx49Kc6oEONWbq2QG2mMRfg3JsOhQdLT73mDP4-803v_H8IBb8tELFV0CJusgFDc)
 
 resolv.conf adalah konfigurasi untuk sistem dns pada linux
 
@@ -187,26 +209,28 @@ Pada kasus ini ketika search kelompok6.local maka akan mencari ke nameserver uta
 
 12. Menjalankan service named → sudo systemctl restart named
 
-![](https://lh7-us.googleusercontent.com/UQUeB7xwmK_S9zHuVhcr18ug4W__RPr2M_OGINZNlRttKUaJo6zWlM3Lcg3TGa6VImw_hWrs5wAFoPQt4bNoIXy9rKVGm5q8R4hHzuHHMCIzG3SwFYGy_AFjcEHKJZ6e27yuUC8jZtDpKscTbUC0hiY)
+![](https://lh7-us.googleusercontent.com/slvxVpoHtcNWlTrPBYMbkDlbn7ytC4heIFpdWJzNA5bPLQoZl_EAWyw_LkwRRWWuUKRhWEkiB8c1nRQKKw5-8N1iLJycwLI9kVat_A8Hckcc0PfeypEmURYP4URT29BxjNy7WTKtL317IYkMUmt_D2k)
 
 service named telah active(running)
 
 13. Mengecek Port dari TCP/IP (:53) terbuka atau tidak → sudo netstat -ptlun
 
-![](https://lh7-us.googleusercontent.com/5W4_1cePoJVTDTstr0Z9pCTnlNkF91eSnSVkFJ0OjhtVK2Y-s5JW1TeZ3Ha_jdUKGHpq7gJTwMVuRMXdvdVKFnxE54W8FVNRJjPo2zgRBkrddZszl8xuJgwXbP0zq7N-lt-cVbcODv0rTHMOUgn56hk)
+![](https://lh7-us.googleusercontent.com/SGspqMfhOIlyQmCJ-dvfrPCD9jX-obqFWFvL--woONJRlHq1prc-OJQzBh4fiV9psnQfeDwN5n9sbKTiqKuKpLGq7uzHT_0cwCJttLnmd41o7_yeHIw_p2jFw1OtXsyQW63TkQfkdyX3MDHesNN1n6s)
 
 14. Melakukan dig kelompok6.local
 
-![](https://lh7-us.googleusercontent.com/W_HsyzQhUC7m3afY6zSDAkycho1Q37OXjOREL4HnaEUmJ7DVOSrTzMJhRo2QzxcbPWqzLmpYScDQkOuZdNssE8-KwwfnICzhhQnXolfsPiLNip-FSQbbjsU9j8H_uFiAR76EUzoedul3XGKCiqw_hmU)
+![](https://lh7-us.googleusercontent.com/BkeO3cS5Ba8Lj1nMgXRkBdG49cZjw13fSz-OsEGIeFw3dV26ddXk9p7wc8ChnHhoIUSLRbitx8K7rXmd3acn0UgxAiyjewxn-gfcTB_Wu4VGlQ5J_6CdEpWlV6wz5sJ4vC4NCgNrBwpTZLv6h01Jx2o)
 
 Mencoba untuk menemukan informasi DNS terkait dengan domain kelompok6.local, seperti alamat IP yang terkait (jika domain tersebut adalah nama host) atau catatan lainnya yang terdaftar dalam server DNS yang diatur untuk domain tersebut.
 
 15. Melakukan dig -x 192.168.6.10
 
-![](https://lh7-us.googleusercontent.com/TpCECHwF3CCNLE3RCmk3NBrkHW-XzCkc_Ui_ZHmMjEWP3l2GPpqiHNqvefmtm_5brSUgmyNFO5PCnDYDRvIUsA17_ilPMK-YiVjeZRXajirXiTOCRZyFbHn9nFXPm2tzG7-6YAFOf-adEaGpIc64Dxc)
+![](https://lh7-us.googleusercontent.com/PyAEv8rxOaYJHiG1j4-jE7QMYpY5yMvdCGYS5C3HGgofnRxN6VXE6pvva3fNC78p6sub2UKTSluOKHzJYIatI-qvtkq4Xq7NTlLNlFnx37i40iA78b4ElgpIRscITAPOV7Sw2c7Pm_cy9RMjRw6b_a0)
 
-16. Melakukan nslookup kelompok6.local
+16. Melakukan nslookup
 
-![](https://lh7-us.googleusercontent.com/MiSAG72veWkacxZPsk9Ni14uJ7mwSDwtF7uy6Kx4whmjgiYUrc4MKCFgW9hBjFC8rTXveii2NLNkBlOp8RvLiIrA8EUSHwVLweG0LjEiOJUolIiAtn9_Qyjx0DRq8e8F6uF7ZM6JC9SddUh6CBS7Rpc)
+![](https://lh7-us.googleusercontent.com/quITdM6P7ADjIsqsn3gyzrbpIfDzLgHPNe0sDCHe2ibYkiFYe1Sy-2CdJm12jx8a9h21VIe-0c9zGo0EJ-EbcWpZJtkjcj5wnzgsK6SmKyRbbIW5stTYO6CZVjc_FxhiDpc--alVI0jvCitW22OZ3BM)
+
+Digunakan untuk mengecek nameserver dan ip telah sesuai.
 
 ##
