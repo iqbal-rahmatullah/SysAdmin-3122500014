@@ -15,19 +15,19 @@
 
 # Daftar Isi
 
-| Nomor | File                                                                            |
-| ----- | ------------------------------------------------------------------------------- |
-| 1     | [Konfigurasi NTP Server](#NTP-client)                                           |
-| 2     | [Konfigurasi Web Server](#Apache-2-dan-PHP-FM)                                  |
-| 3     | [Konfigurasi Database Server](<#Database-(MariaDB-&-PhpMyAdmin)>)               |
-| 4     | [Konfigurasi mail server](#Email-System)                                        |
-| 5     | [Final Check All Services](#Final-Check-All-Services)                           |
-| 6     | [Test Email With Email Client - Thunderbird](<#Thunderbird-(Email-GUI-Client)>) |
-| 7     | [Konfigurasi roundcube](<#Roundcube-(Webmail)>)                                 |
+| Nomor | File                                                                         |
+| ----- | ---------------------------------------------------------------------------- |
+| 1     | [Konfigurasi NTP Server](#NTP-Server)                                        |
+| 2     | [Konfigurasi Web Server](#Apache-2-dan-PHP-FM)                               |
+| 3     | [Konfigurasi Database Server](#MariaDB-&-PhpMyAdmin)                         |
+| 4     | [Konfigurasi mail server](#Email-System)                                     |
+| 5     | [Final Check All Services](#Final-Check-All-Services)                        |
+| 6     | [Test Email With Email Client - Thunderbird](#Thunderbird-Email-GUI-Client)) |
+| 7     | [Konfigurasi roundcube](#Roundcube-Webmail)                                  |
 
 ---
 
-# NTP Client
+# NTP Server
 
 1.  Lakukan instalasi paket layanan sinkronisasi waktu → `sudo apt install systemd-timesyncd`
 
@@ -153,7 +153,7 @@ Jalankan `php php_test.php | head`
 
 ![](https://lh7-us.googleusercontent.com/aq_QFqAYicQmDwXtLwCfwlEEisEQ6coWDj1LhGgRK9htHsd8Pe8TwACMJxU9C84xjpR8ikWPUtw2ITTXaWdblLFL_zC7eU4Ux9WL3akOft8HuzPYYYx3a-2g37gYYhveM3etlnE6fXResG0FReL-_TM)
 
-# Database (MariaDB & PhpMyAdmin)
+# MariaDB & PhpMyAdmin
 
 ## Install MariaDB
 
@@ -350,7 +350,7 @@ Jalankan `php php_test.php | head`
 
 ![](https://lh7-us.googleusercontent.com/Cxa-5xPz15HyvxzyjeACHYfhnkQgBUrZHnQYvv4S6K8uYxVscJCYLhhO52vR7-neUGFinhp423SejQ7wQOOMTMEJkRKe2iIKYaSaEZZTw2Pm0895aA3qRYPRQ7E-EcwIHUq-EK2fJ5MIwCxX4bgytO0)
 
-## Final Check All Services
+# Final Check All Services
 
     netstat -a| grep LISTEN
 
@@ -362,7 +362,7 @@ Melakukan Cek terhadap Layanan Posfix
 
 ![](https://lh7-us.googleusercontent.com/9A42b1pZqc-knVQM_wG7iLAyo5H5n5D0Ez-kuL-DrBrU3Y-3KwMPdXHuyOqw7sl-sOGJ28wUqgL-DVdF7F5sB6_R7cU2PxJXXBpVpo9tZTeQ80Z-5OwVIGVZI64GKo8flQndMiDujoYm8HTXWYrHNPg)
 
-# Thunderbird (Email GUI Client)
+# Thunderbird Email GUI Client
 
 1.  `flatpak install flathub org.mozilla.Thunderbird`
 
@@ -382,7 +382,7 @@ Melakukan Cek terhadap Layanan Posfix
 
 ![](https://lh7-us.googleusercontent.com/QLLzwnUOlggbKeZpSF7ffhjT2zSvG226OOES7FBVKnClmB2CJjps_MElTpn6xxcNyxlKVp3hlrySCdVOnt6p6CPK0ImsY7-1P9TxuG8btFZvS27iODc1oeKy7ynNRg4UD09YTq0IpN6nkGJIr8Nxcgo)
 
-# Roundcube (Webmail)
+# Roundcube Webmail
 
 1.  Create a Database for RoundCube
 
