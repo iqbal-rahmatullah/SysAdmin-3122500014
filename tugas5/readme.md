@@ -106,15 +106,15 @@ Bisa dilihat sudah tersambung ke NTP 0.id.pool.ntp.org, dan memiliki delay waktu
     ![](https://lh7-us.googleusercontent.com/8DzWnJS6jmbixnT0Nbjk3HKCO7vjd8a4URKv8GQR_6wUntC8tc_2ExkKoarafpqJ2yReElMz9DmWNLrfdE44vERMQURXyQxfouG0heWsZ2EWvNMucjtascrjihLHpRuwoR3u0CwQa7oilOKlhryxBGs)
     Karena sudah muncul version dari php, berarti php telah berhasil terinstall
 
-3.  Melakukan test terhadap php  
-     - `nano php_test.php`
-    ![](https://lh7-us.googleusercontent.com/9Va3jOzWvk9YuC1F4WUPGWxhabvia438yX-TNFUdZOurNKlG9bdqj3OspjQg-mPXDnRRAIHpH0gTB0q3HK5WoGd3WMjwuhL829cEIlf6WppD--uHcR8_Ph3n61r9dEYSzOicAo3EvKFseeqn2XOsJSs)
-    Membua file php_test.php, yang akan mencetak ouytput dari `php -i` ketika dijalankan
+3.  Melakukan test terhadap php
 
-        - Jalankan `php php_test.php | head`
+    - `nano php_test.php`
+      ![](https://lh7-us.googleusercontent.com/9Va3jOzWvk9YuC1F4WUPGWxhabvia438yX-TNFUdZOurNKlG9bdqj3OspjQg-mPXDnRRAIHpH0gTB0q3HK5WoGd3WMjwuhL829cEIlf6WppD--uHcR8_Ph3n61r9dEYSzOicAo3EvKFseeqn2XOsJSs)
+      Membua file php_test.php, yang akan mencetak ouytput dari `php -i` ketika dijalankan
 
-    ![](https://lh7-us.googleusercontent.com/w4nO2axRyOQBFzpUo1a9zQQPkopPrbdlSYU7WeAckLVesMnyPCwe16EYMPUUVkLMOytX1yv7cT3WJrpjNmiHouI7IA2sN6_GUu4SAKFtNzTgPgg-R2Aa6A6NkX9K40AclNhrahc_iUDLkes_TYRsIQo)
-    Akan menampilkan output dari `php -i` yaitu menampilkan informasi terkait konfigurasi PHP
+      - Jalankan `php php_test.php | head`
+        ![](https://lh7-us.googleusercontent.com/w4nO2axRyOQBFzpUo1a9zQQPkopPrbdlSYU7WeAckLVesMnyPCwe16EYMPUUVkLMOytX1yv7cT3WJrpjNmiHouI7IA2sN6_GUu4SAKFtNzTgPgg-R2Aa6A6NkX9K40AclNhrahc_iUDLkes_TYRsIQo)
+        Akan menampilkan output dari `php -i` yaitu menampilkan informasi terkait konfigurasi PHP
 
 4.  Melakukan Install PHP-FM → `sudo apt -y install php-fpm`
     ![](https://lh7-us.googleusercontent.com/qPLJPnb-5aI3R-tjGyrgp3CiTazxhcEhT9HBqAb9xpvFZXXz_BAQ0pGcEIQ3DO0SuouQAtdTMFvPOTatoNcJQ3j5lm9tkpvJ1Ppao94v8Fepx4Ihn_NxAQkuM_OieVR19eAJ-TG7dkwPVlKNn4r8Ces)
@@ -123,20 +123,17 @@ Bisa dilihat sudah tersambung ke NTP 0.id.pool.ntp.org, dan memiliki delay waktu
     ![](https://lh7-us.googleusercontent.com/w3b01aUlV2lF0W0pbBb5bBVAu5aiagPdsEv_7sXEZ2WPvVamIV7ct4fcnc_A7ZxiKvyetUicxezFn-eoDSBiEFjDtMOi0DeJjldayTPXipwEtBYXcwIHYErmE3RZFa3XgQTLahcVU0zzB9ihbAvk3bM)
     Menambahkan diantara tag < VirtualHost> - < /VirtualHost> yaitu mengatur Apache HTTP Server agar dapat meneruskan permintaan PHP ke PHP-FPM (PHP FastCGI Process Manager)
 
-        -   `sudo a2enmod proxy_fcgi setenvif`
+    - `sudo a2enmod proxy_fcgi setenvif`
+      ![](https://lh7-us.googleusercontent.com/WmVoeFWb6fOQEvReD76TJxKG7Eu1h80w1A7jxl2sO2zQ3LFiGIoZnx5zfC4Wc6yr7WDw2-MRpGF_G_4ia6jJo2NvarZLbeRRo49f0hr8gglaXDRxr-pQpcxz0peHpoT0k5fHrLiBfRYFaGtauFcrTEY)
+      digunakan untuk mengaktifkan modul-modul proxy_fcgi dan setenvif dalam server Apache.
 
-    ![](https://lh7-us.googleusercontent.com/WmVoeFWb6fOQEvReD76TJxKG7Eu1h80w1A7jxl2sO2zQ3LFiGIoZnx5zfC4Wc6yr7WDw2-MRpGF_G_4ia6jJo2NvarZLbeRRo49f0hr8gglaXDRxr-pQpcxz0peHpoT0k5fHrLiBfRYFaGtauFcrTEY)
-    digunakan untuk mengaktifkan modul-modul proxy_fcgi dan setenvif dalam server Apache.
+    - `sudo a2enconf php8.2-fpm`
+      ![](https://lh7-us.googleusercontent.com/xsuvRRiiW6qemXu8Hxv4rFsTSISrpKFt0wtZJzryk5RcGz7LwwvocdsaRZo5wPbMbO79oOXYzzC9G7YtLQfrl1O33lzZAZsEDH2b-6rZ4Aa1sUZvlaZbK7FtOqa1t6AcujCcjFM9C_eUN6GJ-G43_Ys)
+      digunakan untuk mengaktifkan modul-modul php8.2-fpm
 
-        -   `sudo a2enconf php8.2-fpm`
-
-    ![](https://lh7-us.googleusercontent.com/xsuvRRiiW6qemXu8Hxv4rFsTSISrpKFt0wtZJzryk5RcGz7LwwvocdsaRZo5wPbMbO79oOXYzzC9G7YtLQfrl1O33lzZAZsEDH2b-6rZ4Aa1sUZvlaZbK7FtOqa1t6AcujCcjFM9C_eUN6GJ-G43_Ys)
-    digunakan untuk mengaktifkan modul-modul php8.2-fpm
-
-        -   `sudo systemctl restart php8.2-fpm apache2`
-
-    ![](https://lh7-us.googleusercontent.com/9hmkEdJ1n2zq8Hb2pbiriZafkM9jbyRJtxGNayhK59DO1Xii9aBIa6N2m0wxDmIgdApM1exJ9laaXlNuuq2VsgLEJKdpTiZaSbExteioVOjVCgj31zjfWN44XzRqkK96MKo1Eg-Kl0E2Bh_f0LJUrhs)
-    Melakukan restart service php8.2-fpm dan apache2
+    - `sudo systemctl restart php8.2-fpm apache2`
+      ![](https://lh7-us.googleusercontent.com/9hmkEdJ1n2zq8Hb2pbiriZafkM9jbyRJtxGNayhK59DO1Xii9aBIa6N2m0wxDmIgdApM1exJ9laaXlNuuq2VsgLEJKdpTiZaSbExteioVOjVCgj31zjfWN44XzRqkK96MKo1Eg-Kl0E2Bh_f0LJUrhs)
+      Melakukan restart service php8.2-fpm dan apache2
 
 6.  Melakukan test validasi terhadap PHP-FM dengan membuat file info.php di root document → `sudo nano /var/www/html/info.php`
     ![](https://lh7-us.googleusercontent.com/Lm7xKooM6638JonSPl-vTjB6bK36PI9CpmlJPuR0spPK4qZDAUXn1lZVnsgs4vfe3wF3OjBvoGM9Kpmsj7Y8xh7Mrttj8tA010YSywBVEr2E2-1POaz7-6nK5YDtAdvMVLqEuzHuttvhTVMEmyM2_Ro)
@@ -165,41 +162,32 @@ Bisa dilihat sudah tersambung ke NTP 0.id.pool.ntp.org, dan memiliki delay waktu
     ![](https://lh7-us.googleusercontent.com/118a_bF7cu1QHoeBaTGxpxRf9UgrQC9OqNURl2-GgjF6JbjUZ6MfSPf838hXm6o_JFgYo84ugqZYIem44h99P6snXeN31AXH0DLlacWoloXOn5utlznneSKs28WU46jCOwqCr3x21ndDh1pgpxvH3zY)
     Melakukan beberapa tindakan keamanan standar dalam instalisasi MariaDB, Ditahap ini akan di beri beberapa pertanyaan keamanan. Seperti set MariaDB root password, remove anonymous users, dll.
 
-        -   Connect to MariaDB → `sudo mysql`
+    - Connect to MariaDB → `sudo mysql`
+      ![](https://lh7-us.googleusercontent.com/pjQ_jPvlijB9V_eaDBwm0yq8KavIXuE3psrbE9LITLeM5ZEJXC21P1u0eSNO4ubtn5FushTIUrz_Ijr4s8rtVYOZM8uufwsb5ihiwbQ1RsW4h28Sgdj8ca5T96JP2GZI1_dxFpppKQMuFbuHs8tkjrk)
 
-    ![](https://lh7-us.googleusercontent.com/pjQ_jPvlijB9V_eaDBwm0yq8KavIXuE3psrbE9LITLeM5ZEJXC21P1u0eSNO4ubtn5FushTIUrz_Ijr4s8rtVYOZM8uufwsb5ihiwbQ1RsW4h28Sgdj8ca5T96JP2GZI1_dxFpppKQMuFbuHs8tkjrk)
+    - Menampilkan hak akses yang dimiliki oleh user root → `show grants for root@localhost;`
+      ![](https://lh7-us.googleusercontent.com/wqYBleVwNd7daDArUTa5Xb3HH-0tBKnJe2tZkuWXCSakxe2mudfPyeRnX63dpsMJeM4N-DLvrm3pJe1KkuXSic9vsPEM9yAxhBvpFTpjz7GnJcjyGs0rFW1bCoRauTk3e6ArIwp4PexXEr83BP7Q2lc)
 
-        -   Menampilkan hak akses yang dimiliki oleh user root → `show grants for root@localhost;`
+    - Menampilkan semua daftar user → `select user,host,password from mysql.user;`
+      ![](https://lh7-us.googleusercontent.com/7peYP_dBTyQIqttro1-LBcipIsuKwOhOAwev80Jn3_mzzdIik3DET7TNxxfsGObUIBN8nj5J03v3KX5BqJjQSY7oV-pdl7IbYOh6b-HjmxXDhT5HjpuFe8gQLXEZxhJ0jhXjE7-6PBGu0-BKSwZK29g)
 
-    ![](https://lh7-us.googleusercontent.com/wqYBleVwNd7daDArUTa5Xb3HH-0tBKnJe2tZkuWXCSakxe2mudfPyeRnX63dpsMJeM4N-DLvrm3pJe1KkuXSic9vsPEM9yAxhBvpFTpjz7GnJcjyGs0rFW1bCoRauTk3e6ArIwp4PexXEr83BP7Q2lc)
+    - show database list → `show databases;`
+      ![](https://lh7-us.googleusercontent.com/Rqmu93wCWwLk5UCf0XBay0LtTU8x3oWHQwDWji6iF5PyAT5LY9bd74yxG1J_zNc1PgLs4Pe4wV9ddR7aFhH4i20EULEU-dPWQaIu8gOk3K7GMwG12fu1eLb2gPHyhf4TTERUmW-RcSYa_lmBVYg0-Tk)
 
-        -   Menampilkan semua daftar user → `select user,host,password from mysql.user;`
+    - create test database → `create database test_database;`
+      ![](https://lh7-us.googleusercontent.com/6leKRqEirGNiKZ0WNBI736LyGekfTmdjLz0I4KvWv-OgQgNqU6m44_Ci4EI8iY0hzlLqEr080wxPnnSNw40oeLorYrTY6ODbiPIgUgwMqdX4gi6QA9Hm8sj0waqEPYUCwNmkIL7OE93YVtjkg0jIllc)
 
-    ![](https://lh7-us.googleusercontent.com/7peYP_dBTyQIqttro1-LBcipIsuKwOhOAwev80Jn3_mzzdIik3DET7TNxxfsGObUIBN8nj5J03v3KX5BqJjQSY7oV-pdl7IbYOh6b-HjmxXDhT5HjpuFe8gQLXEZxhJ0jhXjE7-6PBGu0-BKSwZK29g)
+    - create test table on test database → `create table test_database.test_table (id int, name varchar(50), address varchar(50), primary key (id));`
+      ![](https://lh7-us.googleusercontent.com/MCkYThec9M5wSHOoLdZMNSUPMKMWszR2Loa2v_bX67jPACcnsmWu350sI4vXU9wUcKPCf5ubYJk7479RzOzwJQVd4_X63aJtr0q6or1Sdy1N8ulnrVPyXlAXBh0XSQGAe_q4j5iUR84pNLnahEQuFTA)
 
-        -   show database list → `show databases;`
+    - insert data to test table → `insert into test_database.test_table(id, name, address) values("001", "Debian", "Hiroshima");`
+      ![](https://lh7-us.googleusercontent.com/4mHwV4LrDf07eq4EQ7du0ZxmUB5DkKfGVpElN6ePIQ_D17507YFJp2Cvm9qnhG0lhq-EXeLKw8ij4qOVPZ5lnTqk3V2HEA79R9MQtt59T6dBF2EPQQv6tVET-fa1ZnsKZUe70Ex3RXLAQOVxR8vWl14)
 
-    ![](https://lh7-us.googleusercontent.com/Rqmu93wCWwLk5UCf0XBay0LtTU8x3oWHQwDWji6iF5PyAT5LY9bd74yxG1J_zNc1PgLs4Pe4wV9ddR7aFhH4i20EULEU-dPWQaIu8gOk3K7GMwG12fu1eLb2gPHyhf4TTERUmW-RcSYa_lmBVYg0-Tk)
+    - show test table → `select * from test_database.test_table;`
+      ![](https://lh7-us.googleusercontent.com/HwLv4uDoEsqFTmlP_pnIcXCReRkfZphAomC7B2lAi_kfrafcrRxisk1ZZMw9lM1pkNV49Y2S3Hv94g2QtH6zCXmIvNkrDilK_a-tHZpGKZ97Ns82ftcNq1zFiNP0B3oN_AG3kDzNIBXrBQ5meyoqTus)
 
-        -   create test database → `create database test_database;`
-
-    ![](https://lh7-us.googleusercontent.com/6leKRqEirGNiKZ0WNBI736LyGekfTmdjLz0I4KvWv-OgQgNqU6m44_Ci4EI8iY0hzlLqEr080wxPnnSNw40oeLorYrTY6ODbiPIgUgwMqdX4gi6QA9Hm8sj0waqEPYUCwNmkIL7OE93YVtjkg0jIllc)
-
-        -   create test table on test database → `create table test_database.test_table (id int, name varchar(50), address varchar(50), primary key (id));`
-
-    ![](https://lh7-us.googleusercontent.com/MCkYThec9M5wSHOoLdZMNSUPMKMWszR2Loa2v_bX67jPACcnsmWu350sI4vXU9wUcKPCf5ubYJk7479RzOzwJQVd4_X63aJtr0q6or1Sdy1N8ulnrVPyXlAXBh0XSQGAe_q4j5iUR84pNLnahEQuFTA)
-
-        -   insert data to test table → `insert into test_database.test_table(id, name, address) values("001", "Debian", "Hiroshima");`
-
-    ![](https://lh7-us.googleusercontent.com/4mHwV4LrDf07eq4EQ7du0ZxmUB5DkKfGVpElN6ePIQ_D17507YFJp2Cvm9qnhG0lhq-EXeLKw8ij4qOVPZ5lnTqk3V2HEA79R9MQtt59T6dBF2EPQQv6tVET-fa1ZnsKZUe70Ex3RXLAQOVxR8vWl14)
-
-        -   show test table → `select * from test_database.test_table;`
-
-    ![](https://lh7-us.googleusercontent.com/HwLv4uDoEsqFTmlP_pnIcXCReRkfZphAomC7B2lAi_kfrafcrRxisk1ZZMw9lM1pkNV49Y2S3Hv94g2QtH6zCXmIvNkrDilK_a-tHZpGKZ97Ns82ftcNq1zFiNP0B3oN_AG3kDzNIBXrBQ5meyoqTus)
-
-        -   delete test database → `drop database test_database;`
-
-    ![](https://lh7-us.googleusercontent.com/tC0xMfa9wykkGAFDFAwKbQINlmda42UQ4_6bc6gQSTJ7_bQSkGPs9G27yxkA3080-ABDyJpLngsTjS_oCZ8-AGUw7ADe4CdUhhMFOLGq2L_xmXkLf988G-pk6TECXz53EVAlRZPG5ZY5qj58-wapxio)
+    - delete test database → `drop database test_database;`
+      ![](https://lh7-us.googleusercontent.com/tC0xMfa9wykkGAFDFAwKbQINlmda42UQ4_6bc6gQSTJ7_bQSkGPs9G27yxkA3080-ABDyJpLngsTjS_oCZ8-AGUw7ADe4CdUhhMFOLGq2L_xmXkLf988G-pk6TECXz53EVAlRZPG5ZY5qj58-wapxio)
 
 ## Install PhpMyAdmin
 
@@ -221,8 +209,7 @@ Bisa dilihat sudah tersambung ke NTP 0.id.pool.ntp.org, dan memiliki delay waktu
 6.  Coba membuka phpmyadmin di web browser![](https://lh7-us.googleusercontent.com/G3geOVQoCPMwWwCdhpWQZ4twRF8dWLlDdcsoePqJOV8eKB-s7ykgb10i28iUoyiEGNos22joqXlSRHrO3wBTJPS-oi5S-W4rQ2Eq5R8ThF0ncN3vivlf_eLQ_Dixg137QWe1cPH-iF9WpOisI2tQMYg)
     ![](https://lh7-us.googleusercontent.com/gXmrhrPPQFbAmUilNYDwmXXG8mSjNJJPNONzs44GHdlGN2TA07EusypO3EwJmJr_FFIcJSDZfx5leqoMAvn1fJzpzS-kNjuyCdNHt3jde93hNQthox3w-idOTtwPj2GZc5IrlSp1RCYIWjzVOPdos9g)
 
-7.  Menambahkan privillege ke user phpmyadmin - Login ke mariadb → `sudo mariadb -u root -p`
-        -   Lalu berikan hak akses penuh kepada user phpmyadmin → `GRANT ALL PRIVILEGES ON *.* TO 'phpmyadmin'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION; FLUSH PRIVILEGES;`
+7.  Menambahkan privillege ke user phpmyadmin - Login ke mariadb → `sudo mariadb -u root -p` - Lalu berikan hak akses penuh kepada user phpmyadmin → `GRANT ALL PRIVILEGES ON *.* TO 'phpmyadmin'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION; FLUSH PRIVILEGES;`
     ![](https://lh7-us.googleusercontent.com/cnP0YjrKiKgKMsWlgwu5cfSAn_M-irr5aqKLBvIAq6f1KQQ3wDDuqmRzePNZmpyH_K0fw3A7ZbZWJpnOjnl8PhHPXDNENXOdTeMWR4UNmPXE7Eky7ymb2XLITID9LHfYhB_7XLDy8d5BsR0AXzTnTJE)
     ![](https://lh7-us.googleusercontent.com/cDSvQA67vuzC3vf6PYzQwGpeeSV1SoATvJQKBkAhht8wyoUBcqcFRYsDdLUCZTmsSf71QOhgFpw_JhLWUq9dJUgyUVt9jpZGN51We3GSGL5VNAF62-5-FmKzTBW-gMtvMHraYzQ_nOrMsekDpoc3ehs)
     Bisa dilihat sekarang user phpmyadmin, memiliki hak akses penuh seperti create database, dll.
@@ -241,91 +228,70 @@ Bisa dilihat sudah tersambung ke NTP 0.id.pool.ntp.org, dan memiliki delay waktu
 4.  `sudo nano /etc/postfix/main.cf` - Uncoment line 82
     ![](https://lh7-us.googleusercontent.com/D-I7MSAjOVncJJRccRmO5Qe2Sg9OjauJJRLCiEhB41M-p9_RJqlWgVL_4P1V6BeTsioCIrDq_B8SHPz9RwKWwtsQ7oPP2IeB2gElkaIYeNA0dYQWtUlqUkLBa-mj5uB9XbHlZvtjdnAUIaVjJ-JhfdI)
 
-        - Uncoment line 98 dan isi dengan email hostname kelompok6
+    - Uncoment line 98 dan isi dengan email hostname kelompok6
+      ![](https://lh7-us.googleusercontent.com/aFf_MrzQWLdv5o5Fq_GdasW5KklAXMrGFFdSwFYMSCNOSj-hoLPNtJ-nLN-YaJPK4jtrVBhRVMv395Iw2tQWiiI_yXkLX-Ja8jEjlpMhjNpcRoFgk_5Towi1xhHU9yD3Y0U69pXlCrnQRIhsn6FrroY)
 
-    ![](https://lh7-us.googleusercontent.com/aFf_MrzQWLdv5o5Fq_GdasW5KklAXMrGFFdSwFYMSCNOSj-hoLPNtJ-nLN-YaJPK4jtrVBhRVMv395Iw2tQWiiI_yXkLX-Ja8jEjlpMhjNpcRoFgk_5Towi1xhHU9yD3Y0U69pXlCrnQRIhsn6FrroY)
+    - Uncoment line 106 dan isi dengan hostname kelompok6
+      ![](https://lh7-us.googleusercontent.com/x6SGeTJwt-IqCJ8xJEyiLrGfOBnT_WqQThaZTFMX-IeeuoN-PBukr4rmBGLUzdP4QZdA4FeX_g9i9YsXqYPRzCuEylZm4-NezEvEni5CBXzNLc2HNcOEIXPwdcpb9KhQg0-cRRqak-PAYktDfjloCa0)
 
-        - Uncoment line 106 dan isi dengan hostname kelompok6
+    - Uncoment line 127
+      ![](https://lh7-us.googleusercontent.com/8_pLVPlcEXBPsrugBZb5Q-dPuFSFMOWNyh3xYjBDYkM-_D3WYMqhEtoh4xmE4NtUwAYoEmbbDtKtoAJW7giI-ERYtnXMXi9EGLZ7SZg--sGGNltv78fnG-4eNR5agnQcud-ntSiKyHMHayCEE5oZCds)
 
-    ![](https://lh7-us.googleusercontent.com/x6SGeTJwt-IqCJ8xJEyiLrGfOBnT_WqQThaZTFMX-IeeuoN-PBukr4rmBGLUzdP4QZdA4FeX_g9i9YsXqYPRzCuEylZm4-NezEvEni5CBXzNLc2HNcOEIXPwdcpb9KhQg0-cRRqak-PAYktDfjloCa0)
+    - Uncoment line 141
+      ![](https://lh7-us.googleusercontent.com/wZMJjjr-KnLpl-RtJFGOFFTtpxkSaPLWTES8uHkU4XhzdwdG9qu4bUuZVW57o7QwUfTNKszuUzJd3M-pHTmMOSVHLeknYKV3enyfkrGhabJf886hTP-UjQlaVf3A_mgbjScEGtnCCwpy67OhWZ1mVeA)
 
-        - Uncoment line 127
+    - Uncoment line 189
+      ![](https://lh7-us.googleusercontent.com/7cQ5wQjhR5BWEuIBtiKGkjjcGyrN1hhoWFz7iancaTGgujny_EqrNZmi27LrmZQvf1ccg-d7tUNoXAKPxpyYTseIdduZzykDPHOHnAfp9nfnqj_-IhDnFHR22yW3DY-4fSUA8yZOnD6SiL-_njtQHUw)
 
-    ![](https://lh7-us.googleusercontent.com/8_pLVPlcEXBPsrugBZb5Q-dPuFSFMOWNyh3xYjBDYkM-_D3WYMqhEtoh4xmE4NtUwAYoEmbbDtKtoAJW7giI-ERYtnXMXi9EGLZ7SZg--sGGNltv78fnG-4eNR5agnQcud-ntSiKyHMHayCEE5oZCds)
+    - Uncoment line 232
+      ![](https://lh7-us.googleusercontent.com/l-_oxinoQ4X0e2RM7H89UBlBuhXmlT2oW6EmnxDZ2hq9OnX7GpWp3a_HkmLr5-gNOUgWfOrpUO4D4OZH9hxxWYkyZbwnMlQB4W0M-5ybOMa7OW_JjbUXAsXXSqjRkgC5V30-g53dYHQuh7UcVgy-2gA)
 
-        - Uncoment line 141
+    - Uncoment line 277
+      ![](https://lh7-us.googleusercontent.com/422izznfevPWdb-xE7o7L6vzAm7LdQDEpf0Rlr-mLiMBfYnfypu8lM2v-xbDFdvsV_Fbv4NWVrm-04Z8y533imhunVP_sQA_1G68QRNliKXodDONq9XnybcgKrkL7_aNx2mJwgXvS9glct_ar4nUTHI)
 
-    ![](https://lh7-us.googleusercontent.com/wZMJjjr-KnLpl-RtJFGOFFTtpxkSaPLWTES8uHkU4XhzdwdG9qu4bUuZVW57o7QwUfTNKszuUzJd3M-pHTmMOSVHLeknYKV3enyfkrGhabJf886hTP-UjQlaVf3A_mgbjScEGtnCCwpy67OhWZ1mVeA)
+    - Uncoment line 294 dan tambahkan local network
+      ![](https://lh7-us.googleusercontent.com/sMDGHVJyJcVSPi64jnnm4nsG8aDigk-wA5G7dvXDC5BUzP_XkcDzfExoQpxcSFO7hhv2ZE_qRbqQpISfTbsSG1P1TIy6Wfvai_7ZPg-ObT_aAE5FOu4Z8EJGRx2UOT-gZraoDyqUOvmZoI97fzQxvEA)
 
-        - Uncoment line 189
+    - Uncoment line 416
+      ![](https://lh7-us.googleusercontent.com/Yl4qRSNWuNk0xdwgitagD7UJ9YSJPJiKBOq1mZQSL7WP3N5C-_Z2ylRaYr9Aig2av0WVbZt6M-sWqAwYiFeg280iGD1nz4rv58NL1_lStn7XhPLQhpRAUZZSfjFlRmaw7LLl25d-vAL1WZxjLICsAwk)
 
-    ![](https://lh7-us.googleusercontent.com/7cQ5wQjhR5BWEuIBtiKGkjjcGyrN1hhoWFz7iancaTGgujny_EqrNZmi27LrmZQvf1ccg-d7tUNoXAKPxpyYTseIdduZzykDPHOHnAfp9nfnqj_-IhDnFHR22yW3DY-4fSUA8yZOnD6SiL-_njtQHUw)
+    - Uncoment line 427
+      ![](https://lh7-us.googleusercontent.com/pZKTlV8NNQq2hhiTzd3_bTrZvmm9sChPsBAU2lUm0QW0dHUGH9yIiRzbjLf-lHLAiZn_t_sHo5x6UrPkNp-oRalG2l3hhEBdag-jDE3FXp-EA7J_VbIJa9PACDGC21ZPT_iaFPxR1G73zYIrSWtMsAs)
 
-        - Uncoment line 232
+    - Uncoment line 449
+      ![](https://lh7-us.googleusercontent.com/x5iD9Y-a2dFxej0FHljLo2X6Zc0NodjD0m-KLvT2soDjSMvZ9Pl3YOfkrlEqIJwOxbKmdCqmqfXBeWmnUoEY1jJhMNq2_ZsA10XIcMsK18gLqSIDa65Bm_j7RcjAl6o1WooVCvQcPp30HuNsTuHpto0)
 
-    ![](https://lh7-us.googleusercontent.com/l-_oxinoQ4X0e2RM7H89UBlBuhXmlT2oW6EmnxDZ2hq9OnX7GpWp3a_HkmLr5-gNOUgWfOrpUO4D4OZH9hxxWYkyZbwnMlQB4W0M-5ybOMa7OW_JjbUXAsXXSqjRkgC5V30-g53dYHQuh7UcVgy-2gA)
+    - Comment line 558 dan tambahkan di line 589 konfigurais smtpd_banner
+      ![](https://lh7-us.googleusercontent.com/x-7w6vSfby5LrUPS9vUCInjWbu45npgH19DJlxjV8FDHl0zTlw8Ag9zNydJRcC1cAq9t7GpzCsH98XyU8qMuVL_ru3B50HHi2fYzDNB-TI96ZdlZi9Q9H3w_dBvTOPiLRjcyzazLWgNY7LYHCzUl08I)
 
-        - Uncoment line 277
+    - Tambahkan di line 659 sendmail_path
+      ![](https://lh7-us.googleusercontent.com/lPylcnFzCiYFTqXUBqCDnU9PJvZFpPot3xNgEOkP5KUnxZfXSCW6ifKXuUbM3w6KOvnYHhUmMLERewoEZZKy6QCwQ-hurUDvhWJm2dnXh8ice4fhkmzomPhchVk-uqCYhCFsOmmQg-jrqUAvoU4mfQU)
 
-    ![](https://lh7-us.googleusercontent.com/422izznfevPWdb-xE7o7L6vzAm7LdQDEpf0Rlr-mLiMBfYnfypu8lM2v-xbDFdvsV_Fbv4NWVrm-04Z8y533imhunVP_sQA_1G68QRNliKXodDONq9XnybcgKrkL7_aNx2mJwgXvS9glct_ar4nUTHI)
+    - Tambahkan di line 664 newaliases_path
+      ![](https://lh7-us.googleusercontent.com/hn6GcxJhsbsTCCjANx9AiI5pYp-prsQroC37dvy2ROtqb-j9xwNMqJrpgHHuEmWu9OZ2WmXDkxJFourS8DK2Ic57GUIbRvdypDaODI36L2Gw_VMZUCbfQkCga7IWHhXacgi3rhS1OuSHZzyY1JlNMEI)
 
-        - Uncoment line 294 dan tambahkan local network
+    - Tambahkan di line 669 mailq_path
+      ![](https://lh7-us.googleusercontent.com/Nzr4EX_2Zdnb9l3-eMY0e0blYqY8BFu6l8f1g3QH4OP4slpULtd8HvX2a7dxwBSVN7M4zd0q_RHKCHUJcQxyLHxBCrilYjvG6-z0eZUBH9Nc376p0-0rcErkCT7U3fY_4c3sNd6HIE1QLUKTcNJDz9A)
 
-    ![](https://lh7-us.googleusercontent.com/sMDGHVJyJcVSPi64jnnm4nsG8aDigk-wA5G7dvXDC5BUzP_XkcDzfExoQpxcSFO7hhv2ZE_qRbqQpISfTbsSG1P1TIy6Wfvai_7ZPg-ObT_aAE5FOu4Z8EJGRx2UOT-gZraoDyqUOvmZoI97fzQxvEA)
+    - Tambahkan di line 675 setgid_group![](https://lh7-us.googleusercontent.com/_C_01JLWHKSX0rNxDLyVJckReWvWqRe5cEBn4hWpoAL8XDJxJSmzG2sw7ZBkn5oNmvAoxQjTKeNzx5O9ch1Hv4LGjgNI-rfS_FyE5vCmGqG4mph3dslVEFTf84ky2Y9f6lc1OoxwblZuf8L4m08YdNE)
 
-        - Uncoment line 416
+    - Comment line 679
+      ![](https://lh7-us.googleusercontent.com/HJOE-gAMN01bQc1um1gUJBfqYy-sXTKD0kXnU3XmHcegdgmRd-BEjg19zDTPNxFExKOyJTOERdEqZ8xCwLMb_j3SGX2F9aOAwqjObuKR-Qdt_IqFrxg1y3heL-7ggBXMtAMQZKCxbK7Iy9bu7W3gtzU)
 
-    ![](https://lh7-us.googleusercontent.com/Yl4qRSNWuNk0xdwgitagD7UJ9YSJPJiKBOq1mZQSL7WP3N5C-_Z2ylRaYr9Aig2av0WVbZt6M-sWqAwYiFeg280iGD1nz4rv58NL1_lStn7XhPLQhpRAUZZSfjFlRmaw7LLl25d-vAL1WZxjLICsAwk)
+    - Comment line 683
+      ![](https://lh7-us.googleusercontent.com/MsG-eVfnhCECLg0hVebr247yvBcd65EUmaxgNf5ryPK51iZOFah3Hige53XLfngUJF7dYNw3SMJMuj0y7J54cB0UFVBQy6Qj0pgcHJ01LfiDWfUlsKpPTQ6E07-KQ79e9nuWie2Gz2VvdP13dZQJzSw)
 
-        - Uncoment line 427
+    - Comment line 688
+      ![](https://lh7-us.googleusercontent.com/47jBF0uy-Yo0t37ZPf9EV8qWVdGu0cw1jwtrVKNXPxgNYvmme7NonJdFYfF4NfC5r8WK0ZRum3fMho8PRerLsGbC3Zizw1AoTKVAjMDh6R1m3UCpBE5q5qg5QahZY5od0S7jSqwZRV9XRLNkLnBPwII)
 
-    ![](https://lh7-us.googleusercontent.com/pZKTlV8NNQq2hhiTzd3_bTrZvmm9sChPsBAU2lUm0QW0dHUGH9yIiRzbjLf-lHLAiZn_t_sHo5x6UrPkNp-oRalG2l3hhEBdag-jDE3FXp-EA7J_VbIJa9PACDGC21ZPT_iaFPxR1G73zYIrSWtMsAs)
+    - Comment line 692
+      ![](https://lh7-us.googleusercontent.com/LTxOaNnnBiNcKF9QnjUnEh8_5gKIoBD8WAwPcFodWlSAdCTUswAHDI2iFOL_9oc_GVW1NZmPVcgjOpq9LcNrWgvDSxKXFszvFaEHO1RbZOjNW2FgYVdvKHdYYX4cjlzkodPDPQyg0_4eYO_-U6OtLuE)
 
-        - Uncoment line 449
+    - Tambahkan internet protocol di line 692
+      ![](https://lh7-us.googleusercontent.com/PvwO3IF3h-bdkk3fxevzraW_6TPuX0QJXPZUglRhbBIiK67uIQ2AiZyAsOmPmBnSsEqZDR9nciKF6iWQpnhhCbNes5XiLqYA4QI6k647XNI363h2iw2QazbkrzgHQHYz8IzViCVKFMB35t8puGQNtcM)
 
-    ![](https://lh7-us.googleusercontent.com/x5iD9Y-a2dFxej0FHljLo2X6Zc0NodjD0m-KLvT2soDjSMvZ9Pl3YOfkrlEqIJwOxbKmdCqmqfXBeWmnUoEY1jJhMNq2_ZsA10XIcMsK18gLqSIDa65Bm_j7RcjAl6o1WooVCvQcPp30HuNsTuHpto0)
-
-        - Comment line 558 dan tambahkan di line 589 konfigurais smtpd_banner
-
-    ![](https://lh7-us.googleusercontent.com/x-7w6vSfby5LrUPS9vUCInjWbu45npgH19DJlxjV8FDHl0zTlw8Ag9zNydJRcC1cAq9t7GpzCsH98XyU8qMuVL_ru3B50HHi2fYzDNB-TI96ZdlZi9Q9H3w_dBvTOPiLRjcyzazLWgNY7LYHCzUl08I)
-
-        - Tambahkan di line 659 sendmail_path
-
-    ![](https://lh7-us.googleusercontent.com/lPylcnFzCiYFTqXUBqCDnU9PJvZFpPot3xNgEOkP5KUnxZfXSCW6ifKXuUbM3w6KOvnYHhUmMLERewoEZZKy6QCwQ-hurUDvhWJm2dnXh8ice4fhkmzomPhchVk-uqCYhCFsOmmQg-jrqUAvoU4mfQU)
-
-        - Tambahkan di line 664 newaliases_path
-
-    ![](https://lh7-us.googleusercontent.com/hn6GcxJhsbsTCCjANx9AiI5pYp-prsQroC37dvy2ROtqb-j9xwNMqJrpgHHuEmWu9OZ2WmXDkxJFourS8DK2Ic57GUIbRvdypDaODI36L2Gw_VMZUCbfQkCga7IWHhXacgi3rhS1OuSHZzyY1JlNMEI)
-
-        - Tambahkan di line 669 mailq_path
-
-    ![](https://lh7-us.googleusercontent.com/Nzr4EX_2Zdnb9l3-eMY0e0blYqY8BFu6l8f1g3QH4OP4slpULtd8HvX2a7dxwBSVN7M4zd0q_RHKCHUJcQxyLHxBCrilYjvG6-z0eZUBH9Nc376p0-0rcErkCT7U3fY_4c3sNd6HIE1QLUKTcNJDz9A)
-
-        - Tambahkan di line 675 setgid_group![](https://lh7-us.googleusercontent.com/_C_01JLWHKSX0rNxDLyVJckReWvWqRe5cEBn4hWpoAL8XDJxJSmzG2sw7ZBkn5oNmvAoxQjTKeNzx5O9ch1Hv4LGjgNI-rfS_FyE5vCmGqG4mph3dslVEFTf84ky2Y9f6lc1OoxwblZuf8L4m08YdNE)
-
-        - Comment line 679
-
-    ![](https://lh7-us.googleusercontent.com/HJOE-gAMN01bQc1um1gUJBfqYy-sXTKD0kXnU3XmHcegdgmRd-BEjg19zDTPNxFExKOyJTOERdEqZ8xCwLMb_j3SGX2F9aOAwqjObuKR-Qdt_IqFrxg1y3heL-7ggBXMtAMQZKCxbK7Iy9bu7W3gtzU)
-
-        - Comment line 683
-
-    ![](https://lh7-us.googleusercontent.com/MsG-eVfnhCECLg0hVebr247yvBcd65EUmaxgNf5ryPK51iZOFah3Hige53XLfngUJF7dYNw3SMJMuj0y7J54cB0UFVBQy6Qj0pgcHJ01LfiDWfUlsKpPTQ6E07-KQ79e9nuWie2Gz2VvdP13dZQJzSw)
-
-        - Comment line 688
-
-    ![](https://lh7-us.googleusercontent.com/47jBF0uy-Yo0t37ZPf9EV8qWVdGu0cw1jwtrVKNXPxgNYvmme7NonJdFYfF4NfC5r8WK0ZRum3fMho8PRerLsGbC3Zizw1AoTKVAjMDh6R1m3UCpBE5q5qg5QahZY5od0S7jSqwZRV9XRLNkLnBPwII)
-
-        - Comment line 692
-
-    ![](https://lh7-us.googleusercontent.com/LTxOaNnnBiNcKF9QnjUnEh8_5gKIoBD8WAwPcFodWlSAdCTUswAHDI2iFOL_9oc_GVW1NZmPVcgjOpq9LcNrWgvDSxKXFszvFaEHO1RbZOjNW2FgYVdvKHdYYX4cjlzkodPDPQyg0_4eYO_-U6OtLuE)
-
-        - Tambahkan internet protocol di line 692
-
-    ![](https://lh7-us.googleusercontent.com/PvwO3IF3h-bdkk3fxevzraW_6TPuX0QJXPZUglRhbBIiK67uIQ2AiZyAsOmPmBnSsEqZDR9nciKF6iWQpnhhCbNes5XiLqYA4QI6k647XNI363h2iw2QazbkrzgHQHYz8IzViCVKFMB35t8puGQNtcM)
-
-        - Menambahkan config di line terakhir. Yaitu mematikan SMTP VRFY command, require HELO command to sender hosts, Mengatur limit an email size, dan mengatur SMTP-Auth settings
-
-    ![](https://lh7-us.googleusercontent.com/1sJsfUzTufKJkJZ0cQML9ccX4wOd6N8bOg_qgCoykUTjA2Ur9MNIDeMBATC9hbrJSlo7GbD1nO9xjOsGIRpOdFPYzICPa_Nyh5zzmAQe6vwilvsW7lPCO2W964ngD6cVK4_uNjalY7gsLRma7fPsarA)
+    - Menambahkan config di line terakhir. Yaitu mematikan SMTP VRFY command, require HELO command to sender hosts, Mengatur limit an email size, dan mengatur SMTP-Auth settings
+      ![](https://lh7-us.googleusercontent.com/1sJsfUzTufKJkJZ0cQML9ccX4wOd6N8bOg_qgCoykUTjA2Ur9MNIDeMBATC9hbrJSlo7GbD1nO9xjOsGIRpOdFPYzICPa_Nyh5zzmAQe6vwilvsW7lPCO2W964ngD6cVK4_uNjalY7gsLRma7fPsarA)
 
 5.  Meng-update database alias untuk sistem postfix --> `sudo newaliases`
     ![](https://lh7-us.googleusercontent.com/gHd4ggZIUgmoq1wUOUujzM5Vw3yBtYQhZv-nRQ_rFOT6F_AmIfruDvuSDMUNMqRcVCIMZ_zAS_yHf2Fmced82tai9e-mRPnjrf5uqU9ovMdK9bn4pfRDYdFkKT0v9kIj8jQg0T_AdEcvgbHqtpo_tUA)
@@ -369,13 +335,12 @@ Bisa dilihat sudah tersambung ke NTP 0.id.pool.ntp.org, dan memiliki delay waktu
 # Final Check All Services
 
 1.  `netstat -a| grep LISTEN`
+    ![](https://lh7-us.googleusercontent.com/3YwkjGltGhYoyafwBKGZNM0_-0PFJCUM_ac_71GtI6sv7M0fHlXyXaoA7prHyveItbBqarnJD9tHxk24bOw8pbEIC8dPCSi0RRsBnjac4WQ0ZG6hxFo8ey96EZK6Yf2kPAMC_gyW9EJ7CYWePqyzxWM)
+    Akan terlihat hasilnya dengan status Server (LISTEN) : MariaDB(MySQL), IMAP, POP3, DNS(domain - http), IMAPS, POP3S, SSH, Postfix (SMTP)
 
-![](https://lh7-us.googleusercontent.com/3YwkjGltGhYoyafwBKGZNM0_-0PFJCUM_ac_71GtI6sv7M0fHlXyXaoA7prHyveItbBqarnJD9tHxk24bOw8pbEIC8dPCSi0RRsBnjac4WQ0ZG6hxFo8ey96EZK6Yf2kPAMC_gyW9EJ7CYWePqyzxWM)
-Akan terlihat hasilnya dengan status Server (LISTEN) : MariaDB(MySQL), IMAP, POP3, DNS(domain - http), IMAPS, POP3S, SSH, Postfix (SMTP)
-
-2. Melakukan Cek terhadap Layanan Posfix `telnet mail.kelompok6.local 25`
-   ![](https://lh7-us.googleusercontent.com/9A42b1pZqc-knVQM_wG7iLAyo5H5n5D0Ez-kuL-DrBrU3Y-3KwMPdXHuyOqw7sl-sOGJ28wUqgL-DVdF7F5sB6_R7cU2PxJXXBpVpo9tZTeQ80Z-5OwVIGVZI64GKo8flQndMiDujoYm8HTXWYrHNPg)
-   Memeriksa apakah server mail.kelompok6.local dapat menerima koneksi pada port 25. Lalu menhalankan command `ehlo mail.kelompok6.local` yang digunakan untuk memberikan informasi tentang kemampuan server, seperti fitur-fitur yang didukung atau batasan konfigurasi.
+2.  Melakukan Cek terhadap Layanan Posfix `telnet mail.kelompok6.local 25`
+    ![](https://lh7-us.googleusercontent.com/9A42b1pZqc-knVQM_wG7iLAyo5H5n5D0Ez-kuL-DrBrU3Y-3KwMPdXHuyOqw7sl-sOGJ28wUqgL-DVdF7F5sB6_R7cU2PxJXXBpVpo9tZTeQ80Z-5OwVIGVZI64GKo8flQndMiDujoYm8HTXWYrHNPg)
+    Memeriksa apakah server mail.kelompok6.local dapat menerima koneksi pada port 25. Lalu menhalankan command `ehlo mail.kelompok6.local` yang digunakan untuk memberikan informasi tentang kemampuan server, seperti fitur-fitur yang didukung atau batasan konfigurasi.
 
 # Thunderbird Email GUI Client
 
@@ -391,7 +356,7 @@ Akan terlihat hasilnya dengan status Server (LISTEN) : MariaDB(MySQL), IMAP, POP
 4.  Mencoba saling send email - User root mencoba send email ke user iqbal
     ![](https://lh7-us.googleusercontent.com/-_5qIrNmzdMSeQ1Mt01gWlB3VpA-Cygjq1-DRO4OvE9cZ1IduXbBXLBZlfxbTBzFNpg6Ur1CUKU1xl5Dofn56GIbBc5-wSUJelJJNKWiSLWpAnmSKvWK5Jum8GzSBjWW3xguerTAwEOEgpe6c-zywpY)
 
-        - User iqbal mengek email yang diterima
+    - User iqbal mengek email yang diterima
 
     ![](https://lh7-us.googleusercontent.com/QLLzwnUOlggbKeZpSF7ffhjT2zSvG226OOES7FBVKnClmB2CJjps_MElTpn6xxcNyxlKVp3hlrySCdVOnt6p6CPK0ImsY7-1P9TxuG8btFZvS27iODc1oeKy7ynNRg4UD09YTq0IpN6nkGJIr8Nxcgo)
 
@@ -435,5 +400,6 @@ Akan terlihat hasilnya dengan status Server (LISTEN) : MariaDB(MySQL), IMAP, POP
     ![](https://lh7-us.googleusercontent.com/oy316tB8VPy8isUXUB6QMa0oRwuPBCi3eqNuUw29uhhG4Kt5qmL4qBLrBhBjMEqJ5fpj8XBHeDNbM7vtgHKLker6TCDGFhDzR6F_UbvwIZ_Mub47ImIxldMftH98FX8TXBsEbHlZSL4xF9LmY1zCDMI)
     Pesan berhasil terkirim :
     ![](https://lh7-us.googleusercontent.com/4rKsUrROFbxk5aAanBzqOazqy9wRA7cVDkfDUr57zrjC2iUr6lWSBC-miT2oXVywqoNAz_Y4Hxf0lRR9l0rv_JTu2-4gQrh_Zh_BioFfL4c9qT-b4GjJ99PQ1h_mPvD7MntQZOf2ayzCBELyyuiyufo)
+
     User iqbal mengecek email yang diterima :
     ![](https://lh7-us.googleusercontent.com/npAQ_MMpP7vt4suY4vOEur4XcSEQG-pr9UHl4rMkTHxBFyrhzfBQE1HM-dzwRIgpOf04L1V5zv2PUYHDUBxh_fFXE894er4lfLGsPFafIL5hNI3IW4e0vwW19WXCVl10nha4GdfxJOyROqotp2u3EJI)
