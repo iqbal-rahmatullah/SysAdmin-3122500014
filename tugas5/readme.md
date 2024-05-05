@@ -548,7 +548,12 @@ MIME (Multipurpose Internet Mail Extensions) adalah protokol tambahan yang memun
   4.  Content Description : memberikan deskripsi singkat tentang isi dari pesan email, seperti apakah itu berupa gambar, audio, atau video.
 
 - Analisis header email :
-  Selain dari header MIME yang sudah disebutkan di atas, maka termasuk di dalam header email standar. Yaitu meliputi : 1. Date : Menunjukkan waktu ketika email terkirim. 2. From : Alamat email pengirim, menunjukkan siapa yang mengirim email tersebut.  
-   3. To : Alamat email penerima, menunjukkan kepada siapa email tersebut ditujukan. 4. Subject : Subjek atau judul dari email, yang memberikan gambaran isi pesan. 5. Message-ID : ID unik yang digunakan untuk mengidentifikasi email secara unik. Berguna dalam referensi balasan. 6. X-sender : Informasi tambahan tentang pengirim email, seperti alamat email atau nama pengirim tambahan.
+  Selain dari header MIME yang sudah disebutkan di atas, maka termasuk di dalam header email standar. Yaitu meliputi :
+  1. Date : Menunjukkan waktu ketika email terkirim.
+  2. From : Alamat email pengirim, menunjukkan siapa yang mengirim email tersebut.
+  3. To : Alamat email penerima, menunjukkan kepada siapa email tersebut ditujukan.
+  4. Subject : Subjek atau judul dari email, yang memberikan gambaran isi pesan.
+  5. Message-ID : ID unik yang digunakan untuk mengidentifikasi email secara unik. Berguna dalam referensi balasan.
+  6. X-sender : Informasi tambahan tentang pengirim email, seperti alamat email atau nama pengirim tambahan.
 
 #
