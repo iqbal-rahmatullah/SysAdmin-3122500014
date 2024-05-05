@@ -18,4 +18,6 @@ Repository untuk Matkul Workshop Administrasi Jaringan
 
 - Tugas 5 [UTS] : [Click Here](https://github.com/iqbal-rahmatullah/SysAdmin-3122500014/tree/main/tugas5)
 
+- Tugas 6 : [Click Here](https://github.com/iqbal-rahmatullah/SysAdmin-3122500014/tree/main/tugas6)
+
 ##
