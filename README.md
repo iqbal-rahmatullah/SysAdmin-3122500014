@@ -22,4 +22,6 @@ Repository untuk Matkul Workshop Administrasi Jaringan
 
 - Tugas 7 (About docker in VM) : [Click Here](https://github.com/iqbal-rahmatullah/SysAdmin-3122500014/tree/main/tugas7)
 
+- Tugas Docker Project Charter Container Based App : [Click Here](https://github.com/iqbal-rahmatullah/SysAdmin-3122500014/tree/main/project-kelompok)
+
 ##
