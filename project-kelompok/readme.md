@@ -83,17 +83,10 @@ Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang m
 2.  Desain
     Pada tahap desain dalam pengembangan aplikasi Doctor Appointment, fokus utamanya adalah mengubah kebutuhan yang telah diidentifikasi menjadi rencana implementasi yang konkret. Ini meliputi perancangan antarmuka pengguna (UI/UX) yang intuitif dan responsif, mempertimbangkan tata letak, warna, dan navigasi untuk memastikan pengalaman pengguna yang optimal. Selain itu, tahap ini juga mencakup desain arsitektur sistem yang mencakup pemilihan teknologi dan platform yang sesuai, serta desain database yang mencakup skema data, relasi antar tabel, dan pemilihan jenis database yang tepat. Desain ini membentuk landasan yang kuat bagi pengembang untuk mengimplementasikan fungsionalitas aplikasi dengan mempertimbangkan aspek keamanan, kinerja, dan skalabilitas, sesuai dengan visi dan kebutuhan yang telah ditetapkan sebelumnya.
 
-Berikut adalah UI dari aplikasi kami:
+    Berikut adalah UI dari aplikasi kami:
+    LINK FIGMA:
 
-- Tampilan Pasien
-  ![](https://lh7-us.googleusercontent.com/Oq5wrJYqE6tdcNyllt11cqMljiB2VFSM5031W0KOsC6HDXVvdfWoaCCi6wjekn25iaz9PaNUFEHEULiJl0xnKcHodb7gLc3Df2riS8z2G8RH1w5opdfPgb6I7vGcM-l4JIGHIJ4m1vbP_RiV7GmiNBE)![](https://lh7-us.googleusercontent.com/sriLF2EJexzGcCQ558XQYOcbcNJOFxv4POOUddVWKBGdQmU23GxYQ-MRNjZUXZNd85xAu34n56VZJS6PYrUlqEiPvE5woXT7uORTtw2_Cw69BEiX3NXVnLbQvUfjEvEa7TFZ8ARGUlmjtVNHl3ssjZg)![](https://lh7-us.googleusercontent.com/HiwuEe9nzQPTwXyoZRlS4uCEtpIbFxIGqGi0P6ILUrZKjlwSglY6oDBHdHwA5dABpch-krORXLIPjFljyJTCR2RgX0JHqsg57OMhorj7-r26ONo9uITBEY26BQA7NeQ8yF94w85t5ZKQAGvDC66OTVo)![](https://lh7-us.googleusercontent.com/Uy79_bUUFma0BJrObXVMdfKkO8tpCk0pzYtrsAPNotMNtH14ySBUCXCLmcmGSswFGH2CgxRY7QnXT60SVqwj5JrYan91yksRsDJ5tnzuHy61Q-1MHkTtd1cQZje5UkoXs0MQ_yhvbU2kuXNpEPU_E7k)
-
-- Tampilan Dokter
-  ![](https://lh7-us.googleusercontent.com/GAw_T7PWJD8yFuu5hGYC5qli1moMwZy4f1nzQYkolq7msAbpldq39PW4mhpr9kl2R-korwHpAC3KpkJus2PPpzMU4uswGFKPb46TDyfecYaK5i8hrH-NGCFtuTUZZKRfVFM1_62oLAXRJnaYuonv290)![](https://lh7-us.googleusercontent.com/5Ankmz0HW_PXhITRYMV3nwB81EIWRhB4cEAGflpbn8dl360KMWCUrvjwAd56QJIGyLP7ItRBcJjobKfxs08AdC8SyfRm9IfsWHzKpJJq5Ms0M59JSp_ayL8FwNdDQoVuGPXEP7CFzMXRQfIlbdAejhc)![](https://lh7-us.googleusercontent.com/HiwuEe9nzQPTwXyoZRlS4uCEtpIbFxIGqGi0P6ILUrZKjlwSglY6oDBHdHwA5dABpch-krORXLIPjFljyJTCR2RgX0JHqsg57OMhorj7-r26ONo9uITBEY26BQA7NeQ8yF94w85t5ZKQAGvDC66OTVo)![](https://lh7-us.googleusercontent.com/7EeOi6mYnD85Nl-c_L7ych6B6wr_vQUMZqpyRgSNoiUHeO19EbeGbaHltVGQFG_V0EfguvfxTPgvP1DzR5B-ypiI8egPGiGw9FTvd27mQBVs9gXDQ5wnSQo372ZQCiYJB7WlOFSWvbnl0TSXfO3P9M0)
-
-LINK FIGMA:
-
-[https://www.figma.com/design/6F058W0gxYp1WtIpcAfbuR/KonsulDok?node-id=5-23&t=z3SnLoar9uxr8hEQ-0](https://www.figma.com/design/6F058W0gxYp1WtIpcAfbuR/KonsulDok?node-id=5-23&t=z3SnLoar9uxr8hEQ-0)
+    [https://www.figma.com/design/6F058W0gxYp1WtIpcAfbuR/KonsulDok?node-id=5-23&t=z3SnLoar9uxr8hEQ-0](https://www.figma.com/design/6F058W0gxYp1WtIpcAfbuR/KonsulDok?node-id=5-23&t=z3SnLoar9uxr8hEQ-0)
 
 3.  Development/Implementasi
     Pada tahap ini, tim pengembang mulai mengimplementasikan desain yang telah dibuat menjadi kode aplikasi yang dapat dijalankan. Proses ini melibatkan pengembangan frontend dan backend, integrasi dengan database, serta penerapan fitur-fitur yang telah direncanakan. Pengembang harus memastikan bahwa kode yang dihasilkan sesuai dengan spesifikasi dan standar yang telah ditetapkan serta melakukan pengujian unit (unit testing) untuk memastikan setiap komponen berfungsi dengan baik.
