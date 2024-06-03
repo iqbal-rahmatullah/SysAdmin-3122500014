@@ -55,6 +55,7 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 
 - [Daftar Isi](#daftar-isi)
 - [Pendahuluan](#pendahuluan)
+- [Ruang Lingkup](#ruang-lingkup)
 - [System Architecture](#system-architecture)
 - [Tahapan Pelaksaan](#tahapan-pelaksaan)
 - [Tim Dan Tugas](#tim-dan-tugas)
@@ -111,7 +112,7 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
 
     - Peluncuran: Melakukan peluncuran resmi aplikasi kepada pengguna.
 
-Setelah deployment, tim pengembang akan terus memantau aplikasi untuk memastikan kinerjanya tetap optimal dan melakukan pemeliharaan serta pembaruan jika diperlukan.
+    Setelah deployment, tim pengembang akan terus memantau aplikasi untuk memastikan kinerjanya tetap optimal dan melakukan pemeliharaan serta pembaruan jika diperlukan.
 
 ## Tim Dan Tugas
 
@@ -139,3 +140,7 @@ Setelah deployment, tim pengembang akan terus memantau aplikasi untuk memastikan
 LINK BACKLOG
 
 [https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing)
+
+## Kesimpulan
+
+Hasil testing nantinya
