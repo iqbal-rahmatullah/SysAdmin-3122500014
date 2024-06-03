@@ -79,7 +79,7 @@ Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang m
 
 1.  Perencanaan dan Analysis
     Perencanaan dan analisis adalah tahap awal yang krusial dalam pengembangan aplikasi janji Perencanaan dan analisis adalah tahap awal yang krusial dalam pengembangan aplikasi Doctor Appointment. Dalam tahap perencanaan, tujuan utama adalah menetapkan visi, misi, dan lingkup proyek dengan mengidentifikasi kebutuhan stakeholder serta menyusun rencana proyek yang mencakup timeline, pembagian tugas, dan mitigasi risiko. Analisis melibatkan pengumpulan dan dokumentasi kebutuhan fungsional dan non-fungsional melalui wawancara, survei, dan studi kasus, serta pembuatan diagram dan model seperti use case dan ERD untuk memvisualisasikan sistem. Kedua tahap ini memastikan pemahaman yang mendalam tentang kebutuhan pengguna dan menyediakan dasar yang kuat untuk pengembangan aplikasi yang efektif dan efisien.
-
+    <br>
 2.  Desain
     Pada tahap desain dalam pengembangan aplikasi Doctor Appointment, fokus utamanya adalah mengubah kebutuhan yang telah diidentifikasi menjadi rencana implementasi yang konkret. Ini meliputi perancangan antarmuka pengguna (UI/UX) yang intuitif dan responsif, mempertimbangkan tata letak, warna, dan navigasi untuk memastikan pengalaman pengguna yang optimal. Selain itu, tahap ini juga mencakup desain arsitektur sistem yang mencakup pemilihan teknologi dan platform yang sesuai, serta desain database yang mencakup skema data, relasi antar tabel, dan pemilihan jenis database yang tepat. Desain ini membentuk landasan yang kuat bagi pengembang untuk mengimplementasikan fungsionalitas aplikasi dengan mempertimbangkan aspek keamanan, kinerja, dan skalabilitas, sesuai dengan visi dan kebutuhan yang telah ditetapkan sebelumnya.
 
@@ -87,29 +87,25 @@ Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang m
     LINK FIGMA:
 
     [https://www.figma.com/design/6F058W0gxYp1WtIpcAfbuR/KonsulDok?node-id=5-23&t=z3SnLoar9uxr8hEQ-0](https://www.figma.com/design/6F058W0gxYp1WtIpcAfbuR/KonsulDok?node-id=5-23&t=z3SnLoar9uxr8hEQ-0)
+    <br>
 
 3.  Development/Implementasi
     Pada tahap ini, tim pengembang mulai mengimplementasikan desain yang telah dibuat menjadi kode aplikasi yang dapat dijalankan. Proses ini melibatkan pengembangan frontend dan backend, integrasi dengan database, serta penerapan fitur-fitur yang telah direncanakan. Pengembang harus memastikan bahwa kode yang dihasilkan sesuai dengan spesifikasi dan standar yang telah ditetapkan serta melakukan pengujian unit (unit testing) untuk memastikan setiap komponen berfungsi dengan baik.
-
+    <br>
 4.  Testing
-    Pengujian (testing) adalah tahap kritis dalam pengembangan aplikasi Doctor Appointment untuk memastikan bahwa aplikasi berfungsi dengan baik dan memenuhi kebutuhan pengguna. Berikut adalah langkah-langkah yang biasanya dilakukan dalam tahap pengujian: - Pengujian Unit (Unit Testing): Memastikan setiap komponen atau unit aplikasi berfungsi dengan benar secara terpisah. Pengujian ini dilakukan oleh pengembang selama proses pengkodean. - Pengujian Integrasi (Integration Testing): Memastikan bahwa komponen atau unit yang berbeda dapat bekerja sama dengan baik setelah digabungkan. Ini termasuk pengujian alur data antara frontend dan backend, serta integrasi dengan database. - Pengujian Sistem (System Testing): Menguji aplikasi secara keseluruhan untuk memastikan bahwa semua fungsi bekerja sesuai dengan yang diharapkan dalam berbagai skenario penggunaan. - Pengujian Kinerja (Performance Testing): Mengukur kinerja aplikasi dalam hal kecepatan, skalabilitas, dan stabilitas di bawah beban yang berbeda.
-
-        -   Pengujian Keamanan (Security Testing): Memastikan bahwa aplikasi aman dari ancaman dan kerentanan yang mungkin dieksploitasi oleh pihak yang tidak bertanggung jawab.
-
-        -   Pengujian Pengguna (User Acceptance Testing/UAT): Melibatkan pengguna akhir untuk memastikan bahwa aplikasi memenuhi kebutuhan mereka dan memberikan pengalaman pengguna yang baik.
-
-Setelah semua pengujian selesai dan aplikasi dianggap siap, tim pengembang akan memperbaiki bug atau masalah yang ditemukan selama pengujian.
-
+    Pengujian (testing) adalah tahap kritis dalam pengembangan aplikasi Doctor Appointment untuk memastikan bahwa aplikasi berfungsi dengan baik dan memenuhi kebutuhan pengguna. Berikut adalah langkah-langkah yang biasanya dilakukan dalam tahap pengujian: - Installation Testing : memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung. - Fungsional testing : memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.
+        Setelah semua pengujian selesai dan aplikasi dianggap siap, tim pengembang akan memperbaiki bug atau masalah yang ditemukan selama pengujian.
+    <br>
 5.  Deployment
     Tahap ini melibatkan peluncuran aplikasi ke lingkungan produksi sehingga dapat digunakan oleh pengguna akhir. Proses deployment mencakup:
 
-        -   Persiapan Lingkungan Produksi: Mengonfigurasi server dan infrastruktur lain yang diperlukan untuk menjalankan aplikasi.
+    - Persiapan Lingkungan Produksi: Mengonfigurasi server dan infrastruktur lain yang diperlukan untuk menjalankan aplikasi.
 
-        -   Migrasi Data: Memindahkan data dari lingkungan pengembangan atau pengujian ke lingkungan produksi jika diperlukan.
+    - Migrasi Data: Memindahkan data dari lingkungan pengembangan atau pengujian ke lingkungan produksi jika diperlukan.
 
-        -   Pengujian Produksi: Melakukan pengujian akhir untuk memastikan bahwa aplikasi berfungsi dengan baik di lingkungan produksi.
+    - Pengujian Produksi: Melakukan pengujian akhir untuk memastikan bahwa aplikasi berfungsi dengan baik di lingkungan produksi.
 
-        -   Peluncuran: Melakukan peluncuran resmi aplikasi kepada pengguna.
+    - Peluncuran: Melakukan peluncuran resmi aplikasi kepada pengguna.
 
 Setelah deployment, tim pengembang akan terus memantau aplikasi untuk memastikan kinerjanya tetap optimal dan melakukan pemeliharaan serta pembaruan jika diperlukan.
 
