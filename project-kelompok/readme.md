@@ -71,6 +71,10 @@ Selain itu, aplikasi ini juga memberikan manfaat signifikan bagi klinik dan ruma
 
 Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang menjawab kebutuhan akan layanan kesehatan yang lebih cepat, aman, dan efisien. Dengan terus berkembangnya teknologi dan meningkatnya kebutuhan masyarakat akan layanan kesehatan yang lebih baik, aplikasi ini memiliki potensi besar untuk terus berkembang dan memberikan kontribusi yang signifikan dalam meningkatkan kualitas pelayanan kesehatan di masa mendatang.
 
+## Ruang Lingkup
+
+KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberikan pengguna akses mudah ke berbagai fitur terkait doctor appointment. Bagian backend dari aplikasi ini dikembangkan dengan menggunakan framework ExpressJS, yang mengelola segal interaksi dengan database untuk penyimpanan dan pengambilan data. Aplikasi ini memanfaatkan MySQL sebagai database, yang berfungsi untuk menyimpan dan mengakses data, serta merespons permintaan dari pengguna. Server bertindak sebagai perantara antara aplikasi mobile, backend, dan database, menerima permintaan dari pengguna, meneruskannya ke backend dan database, dan kemudian mengirimkan respons kembali kepada pengguna
+
 ## System Architecture
 
 **![](https://lh7-us.googleusercontent.com/MakIIki57u_Tk3sO8DW6e3Nx1POS-fchx2G4tk3gg75DIlQl30Qo18Gp6utcBdSK0puVZhe6ivSiwScnRmtsiRumCZn4aKMqVEfruqA3SKKpjr92HHwog0oP3PMX8dsMKCdaDXm9QR5LJgXF_jXhVP8)**
@@ -94,7 +98,7 @@ Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang m
     <br>
 4.  Testing
     Pengujian (testing) adalah tahap kritis dalam pengembangan aplikasi Doctor Appointment untuk memastikan bahwa aplikasi berfungsi dengan baik dan memenuhi kebutuhan pengguna. Berikut adalah langkah-langkah yang biasanya dilakukan dalam tahap pengujian: - Installation Testing : memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung. - Fungsional testing : memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.
-        Setelah semua pengujian selesai dan aplikasi dianggap siap, tim pengembang akan memperbaiki bug atau masalah yang ditemukan selama pengujian.
+    Setelah semua pengujian selesai dan aplikasi dianggap siap, tim pengembang akan memperbaiki bug atau masalah yang ditemukan selama pengujian.
     <br>
 5.  Deployment
     Tahap ini melibatkan peluncuran aplikasi ke lingkungan produksi sehingga dapat digunakan oleh pengguna akhir. Proses deployment mencakup:
