@@ -57,7 +57,7 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 - [Pendahuluan](#pendahuluan)
 - [Ruang Lingkup](#ruang-lingkup)
 - [System Architecture](#system-architecture)
-- [Tahapan Pelaksaan](#tahapan-pelaksaan)
+- [Tahapan Pelaksaan](#tahapan-pelaksanaan)
 - [Tim Dan Tugas](#tim-dan-tugas)
 
 <hr>
@@ -97,33 +97,33 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
     <br>
 
 2.  Mobile Development
-    <br> 1. Slicing design dari Figma ke Flutter
+    <br> - Slicing design dari Figma ke Flutter
     Tim pengembangan mobile mulai menerjemahkan desain UI dari Figma ke dalam kode Flutter. Tim pengembang mulai membuat re-usable component yang nantinya digunakan untuk membentuk sebuah page.
-    <br> 2. Konfigurasi state management
+    <br> - Konfigurasi state management
     Konfigurasi state management bertujuan untuk mengatur bagaimana data dalam aplikasi dikelola dan diubah, serta memastikan sinkronisasi data yang efisien antar komponen UI. Pada tahap ini pengembang memanfaatkan package Bloc dan Cubit.
-    <br> 3. Integrasi datasource
+    <br> - Integrasi datasource
     Melakukan integerasi datasource, baik remote datasource yang akan menghubungkan aplikasi dengan backend untuk mengambil dan mengirim data. Dan local data source yang akan menyimpan pada storage perangkat menggunakan package HIVE.
     <br>
 
 3.  Backend development
-    <br> 1. Membuat REST API
+    <br> - Membuat REST API
     Pembuatan REST API yang akan digunakan oleh aplikasi mobile untuk berkomunikasi dengan server. REST API ini memungkinkan aplikasi untuk melakukan operasi CRUD (Create, Read, Update, Delete) dengan data yang tersimpan di backend.
-    <br> 2. Konfigurasi JWT
+    <br> - Konfigurasi JWT
     Mengimplementasikan JWT (JSON Web Token) untuk keamanan. JWT digunakan untuk mengautentikasi pengguna dan memastikan bahwa hanya pengguna yang sah yang dapat mengakses API.
-    <br> 3. Konfigurasi Websocket
+    <br> - Konfigurasi Websocket
     Mengonfigurasi Websocket untuk mendukung komunikasi real-time. Websocket memungkinkan aplikasi untuk menerima pembaruan data secara instan tanpa perlu melakukan polling ke server secara terus-menerus.
     <br>
 
 4.  Deployment
-    <br> 1. Membuat aplikasi berbasis microservice
+    <br> - Membuat aplikasi berbasis microservice
     Memecah aplikasi menjadi beberapa layanan kecil yang dapat diatur secara independen, meningkatkan skalabilitas dan fleksibilitas.
-    <br> 2. Containerization Application
+    <br> - Containerization Application
     Menggunakan Docker, tim memastikan bahwa setiap layanan dapat berjalan dalam lingkungan terisolasi, membuat pengelolaan dan penerapan aplikasi lebih mudah.
     <br>
 5.  Testing
-    <br> 1. Functional testing
+    <br> - Functional testing
     Memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.
-    <br> 2. Intallation testinng
+    <br> - Intallation testinng
     Memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung.
 
 ## Tim Dan Tugas
