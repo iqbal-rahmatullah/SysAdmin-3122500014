@@ -387,9 +387,13 @@ Result :<br>
 1.  Auth service
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXe6WDulfXyGiSxwU-M39_8VPEFyCBIRfmVSWAofbwoLaIzuN28WbL-OoIzIVxkIOS_-h55SABuH4uFvVHsGhdc5z9U-UiTzqHzBzYht7_69TT7oCyYFtTUYVPAevIXUuQ0MD8dc7s_S69ssFnWkPcFw4Zj1?key=f0ajtpqy-YMg5H0LL2hqaQ)
 <br><br>
-Link dokumentasi testing : [https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing)
 
+2.  Doctor service
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeJQIJw1NANv7va6BdI6gYegIO_qIw_rTcH0xvkObaNPO7h_2rzee97HAidEqyTeOLOU5dJL5P32GcbyK4xvXcCZtwioIfkv91PuSA3f0kJjjk3QyTeDVKyJu0amE4H19_cNXAJz97kjdwMEEvgQLnoHD4G?key=f0ajtpqy-YMg5H0LL2hqaQ)
 <br><br>
+
+Link dokumentasi testing : [https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing)<br><br>
+
 # Kesimpulan<br>
 KonsulDok adalah aplikasi mobile berbasis Flutter yang bertujuan membantu penderita sakit dalam merencanakan janji temu dengan dokter. Aplikasi ini menawarkan fitur pemesanan dokter dengan mudah serta memungkinkan pasien untuk menghubungi dokter melalui fitur chat real-time. Backend aplikasi menggunakan ExpressJS. Docker Engine digunakan untuk pengembangan, dan menjalankan aplikasi dalam kontainer, memastikan portabilitas, isolasi, dan kemudahan deployment.
 <br><br>
