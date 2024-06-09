@@ -396,7 +396,17 @@ Result :<br>
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXefPSpTBuoqADpzoWOtm2AhJJnxr4_2CePofNNCumnVAh6B8XFzFafS2IFR0a1KP6apbKsvxRuw92U-r5HXCKzI0grJoWmyMr4ezgapFU0S8sjgDQpAArfsCHcQPUBxrDLNWeSa7ca-0jFLkvU-UPY-WJPW?key=f0ajtpqy-YMg5H0LL2hqaQ)
 <br><br>
 
-Link dokumentasi testing : [https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing)<br><br>
+4.  Rating service<br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXffHxovTkeEnyOgCx1ouztl0AhPXGhKPACBvgzpBBC9p2xyOz94U4CNaayxARD3XjUxQRhR3_TJXLFP8QmaDiapXPSogemR60ZITIwaqk5_NUEOXjaZZrtJwa_MVxcuvpEDetOEvhDM6dwHQ4sznQzRU5h7?key=f0ajtpqy-YMg5H0LL2hqaQ)<br><br>
+
+5.  Chat service<br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeymqgYXzwLzAbpUtOju5ax0Sda7MjzQtMRy_isrSGIA0b86K66R5k8S-YL8hF7fsxRrh3HMlqpZb0U3vGB-lFpwhVjEHRO_KlWbzWmPG4jMx-2-eIrv6OHXDLgspnocLZTkcWNi77vkwIuAOPp0-Gl8tEW?key=f0ajtpqy-YMg5H0LL2hqaQ)<br><br>
+
+Link postman collection:<br>
+[https://www.postman.com/bold-rocket-984760/workspace/konsuldok/collection/26513725-dcb759b5-68d1-413d-a7d2-2b4272070834?action=share&creator=26513725](https://www.postman.com/bold-rocket-984760/workspace/konsuldok/collection/26513725-dcb759b5-68d1-413d-a7d2-2b4272070834?action=share&creator=26513725)<br><br>
+
+Link dokumentasi testing : <br>
+[https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing)<br><br>
 
 # Kesimpulan<br>
 KonsulDok adalah aplikasi mobile berbasis Flutter yang bertujuan membantu penderita sakit dalam merencanakan janji temu dengan dokter. Aplikasi ini menawarkan fitur pemesanan dokter dengan mudah serta memungkinkan pasien untuk menghubungi dokter melalui fitur chat real-time. Backend aplikasi menggunakan ExpressJS. Docker Engine digunakan untuk pengembangan, dan menjalankan aplikasi dalam kontainer, memastikan portabilitas, isolasi, dan kemudahan deployment.
