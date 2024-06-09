@@ -65,6 +65,20 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 
 <hr>
 
+# Abstrak<br>
+
+KonsulDok adalah aplikasi mobile berbasis Flutter yang dirancang untuk membantu penderita sakit dalam merencanakan janji temu dengan dokter. Aplikasi ini memberikan fitur pemesanan dokter dengan mudah, serta pasien dapat menghubungi dokter menggunakan fitur chat realtime pada aplikasi ini. Backend aplikasi menggunakan ExpressJS dengan bantuan ORM Prisma untuk autentikasi dan berinteraksi dengan MYSQL yang menyimpan data dan melakukan operasi CRUD. Docker Engine digunakan untuk mengembangkan, mengirimkan, dan menjalankan aplikasi dalam kontainer, memastikan portabilitas, isolasi, dan kemudahan deployment. Kemudian kami membentuk microservice pada aplikasi Docker Engine, serta melakukan containerization pada setiap service sehingga service-service tersebut dapat berjalan independen(tidak berketergantungan dengan service lainnya).<br><br>
+Berikut untuk pembagian port dari tiap-tiap service yang ada :<br>
+-   Api gateway → 3000:3000<br>
+-   MySQL → 3306/tcp<br>
+-   service_user → 4000:4000<br>
+-   service_chat → 7001:7001<br>
+-   service_rating → 5001:5001<br>
+-   service_appointment → 8000:8000<br>
+-   service_doctor → 6000:6000<br>
+-   adminer → 8001:8000
+<br><br>
+
 # Pendahuluan
 
 Dalam era digital saat ini, teknologi informasi telah merambah ke berbagai aspek kehidupan, termasuk sektor kesehatan. Salah satu inovasi penting dalam bidang ini adalah aplikasi Doctor Appointment. Aplikasi ini dirancang untuk memudahkan pasien dalam mengatur pertemuan dengan dokter tanpa harus melalui proses yang panjang dan rumit. Dengan hadirnya aplikasi Doctor Appointment, baik pasien maupun tenaga medis dapat mengelola waktu dan sumber daya dengan lebih efisien.
