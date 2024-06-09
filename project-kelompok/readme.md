@@ -51,7 +51,7 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 <h2 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h2>
 </div>
 
-## Daftar Isi
+# Daftar Isi
 
 - [Abstrak](#abstrak)
 - [Pendahuluan](#pendahuluan)
@@ -64,7 +64,7 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 
 <hr>
 
-## Pendahuluan
+# Pendahuluan
 
 Dalam era digital saat ini, teknologi informasi telah merambah ke berbagai aspek kehidupan, termasuk sektor kesehatan. Salah satu inovasi penting dalam bidang ini adalah aplikasi Doctor Appointment. Aplikasi ini dirancang untuk memudahkan pasien dalam mengatur pertemuan dengan dokter tanpa harus melalui proses yang panjang dan rumit. Dengan hadirnya aplikasi Doctor Appointment, baik pasien maupun tenaga medis dapat mengelola waktu dan sumber daya dengan lebih efisien.
 
@@ -74,15 +74,15 @@ Selain itu, aplikasi ini juga memberikan manfaat signifikan bagi klinik dan ruma
 
 Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang menjawab kebutuhan akan layanan kesehatan yang lebih cepat, aman, dan efisien. Dengan terus berkembangnya teknologi dan meningkatnya kebutuhan masyarakat akan layanan kesehatan yang lebih baik, aplikasi ini memiliki potensi besar untuk terus berkembang dan memberikan kontribusi yang signifikan dalam meningkatkan kualitas pelayanan kesehatan di masa mendatang.
 
-## Ruang Lingkup
+# Ruang Lingkup
 
 KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberikan pengguna akses mudah ke berbagai fitur terkait doctor appointment. Bagian backend dari aplikasi ini dikembangkan dengan menggunakan framework ExpressJS, yang mengelola segal interaksi dengan database untuk penyimpanan dan pengambilan data. Aplikasi ini memanfaatkan MySQL sebagai database, yang berfungsi untuk menyimpan dan mengakses data, serta merespons permintaan dari pengguna. Server bertindak sebagai perantara antara aplikasi mobile, backend, dan database, menerima permintaan dari pengguna, meneruskannya ke backend dan database, dan kemudian mengirimkan respons kembali kepada pengguna
 
-## Desain Sistem
+# Desain Sistem
 
 **![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdRUK4HWf4FH_e5CZJrTeETiill16ikDVRK11Ym8Kf8zAOb-6zxzohdC1OmpldgNqpyvP0HB95jSY6PLkBN9u7ma4JxheMzx8De_ULP6mwWLYOSXQHDI2UG0CtSXuwMSOz9nW0ejK1lfFHywtMr1VJbJwul?key=6Eojv_aTg9PSKZFsU8qskA)**
 
-## Tahapan pelaksanaan
+# Tahapan pelaksanaan
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXetaN6Pp7BQiQSaPB18IESuynteuBwmRL6qbWMpbmEZadYz8Wad_QEMRox9wY37mOaNmqIGTD2vZmE84HZ0Py-yfWxBuJ9pfwx7AaQRK5dB9TqEce3inpPDhxJ3DEVlnke5w3Qt8d8wTyhcsbfUxQPNW4aO?key=6Eojv_aTg9PSKZFsU8qskA)
 
@@ -129,7 +129,7 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
     <br> - Intallation testinng
     Memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung.
 
-## Tim Dan Tugas
+# Tim Dan Tugas
 
 1.  UI/UX: Awal, Zahro, Vira
     ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXewVwuSFCwjrg0pIJy5TZJXHTpzaHeQZmHXqGmZP9pbUDVV6gG8pfM0HbuXYPqtuLOVBsgRfXSO29FKSZKkfLOZUCmAcJTXoyooiYygMsS_U2MGQrCfeXTaGlUtLHE0Ol6TeEwuDY0LksS-mZx-ngcUlaw?key=6Eojv_aTg9PSKZFsU8qskA)
@@ -172,9 +172,9 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
 <br><br>
 
 LINK BACKLOG :
-[https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing)
+[https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing)<br>
 
-## Implementasi
+# Implementasi
 -   Tahap 1: Perencanaan & Analisis (Minggu 1-2)<br>
 Tujuan & Sasaran: Mengidentifikasi dan mendokumentasikan tujuan serta sasaran implementasi KonsulDok.<br>  
 Mengidentifikasi Target Pengguna:
@@ -206,4 +206,4 @@ Output: Instalasi aplikasi yang berhasil<br>
 Functional Testing: Melakukan pengujian fungsional untuk memastikan semua fitur aplikasi berfungsi dengan benar.
 Output: Hasil pengujian fungsional yang baik<br><br>
 
-## Kesimpulan
+# Kesimpulan
