@@ -392,6 +392,10 @@ Result :<br>
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeJQIJw1NANv7va6BdI6gYegIO_qIw_rTcH0xvkObaNPO7h_2rzee97HAidEqyTeOLOU5dJL5P32GcbyK4xvXcCZtwioIfkv91PuSA3f0kJjjk3QyTeDVKyJu0amE4H19_cNXAJz97kjdwMEEvgQLnoHD4G?key=f0ajtpqy-YMg5H0LL2hqaQ)
 <br><br>
 
+3.  Appointment Service<br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXefPSpTBuoqADpzoWOtm2AhJJnxr4_2CePofNNCumnVAh6B8XFzFafS2IFR0a1KP6apbKsvxRuw92U-r5HXCKzI0grJoWmyMr4ezgapFU0S8sjgDQpAArfsCHcQPUBxrDLNWeSa7ca-0jFLkvU-UPY-WJPW?key=f0ajtpqy-YMg5H0LL2hqaQ)
+<br><br>
+
 Link dokumentasi testing : [https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing)<br><br>
 
 # Kesimpulan<br>
