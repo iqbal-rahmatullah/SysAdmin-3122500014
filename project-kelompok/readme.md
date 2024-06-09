@@ -103,23 +103,24 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
     Konfigurasi state management bertujuan untuk mengatur bagaimana data dalam aplikasi dikelola dan diubah, serta memastikan sinkronisasi data yang efisien antar komponen UI. Pada tahap ini pengembang memanfaatkan package Bloc dan Cubit.
     <br> - Integrasi datasource
     Melakukan integerasi datasource, baik remote datasource yang akan menghubungkan aplikasi dengan backend untuk mengambil dan mengirim data. Dan local data source yang akan menyimpan pada storage perangkat menggunakan package HIVE.
-    <br>
+    <br><br>
 
-3.  Backend development
-    <br> - Membuat REST API
-    Pembuatan REST API yang akan digunakan oleh aplikasi mobile untuk berkomunikasi dengan server. REST API ini memungkinkan aplikasi untuk melakukan operasi CRUD (Create, Read, Update, Delete) dengan data yang tersimpan di backend.
-    <br> - Konfigurasi JWT
-    Mengimplementasikan JWT (JSON Web Token) untuk keamanan. JWT digunakan untuk mengautentikasi pengguna dan memastikan bahwa hanya pengguna yang sah yang dapat mengakses API.
-    <br> - Konfigurasi Websocket
+3.  Backend development<br> 
+    - Membuat REST API
+    Pembuatan REST API yang akan digunakan oleh aplikasi mobile untuk berkomunikasi dengan server. REST API ini memungkinkan aplikasi untuk melakukan operasi CRUD (Create, Read, Update, Delete) dengan data yang tersimpan di backend.<br> 
+    - Konfigurasi JWT
+    Mengimplementasikan JWT (JSON Web Token) untuk keamanan. JWT digunakan untuk mengautentikasi pengguna dan memastikan bahwa hanya pengguna yang sah yang dapat mengakses API.<br> 
+    - Konfigurasi Websocket
     Mengonfigurasi Websocket untuk mendukung komunikasi real-time. Websocket memungkinkan aplikasi untuk menerima pembaruan data secara instan tanpa perlu melakukan polling ke server secara terus-menerus.
-    <br>
+    <br><br>
 
-4.  Deployment
-    <br> - Membuat aplikasi berbasis microservice
-    Memecah aplikasi menjadi beberapa layanan kecil yang dapat diatur secara independen, meningkatkan skalabilitas dan fleksibilitas.
-    <br> - Containerization Application
+4.  Deployment<br>
+
+    - Membuat aplikasi berbasis microservice
+    Memecah aplikasi menjadi beberapa layanan kecil yang dapat diatur secara independen, meningkatkan skalabilitas dan fleksibilitas.<br>
+    - Containerization Application
     Menggunakan Docker, tim memastikan bahwa setiap layanan dapat berjalan dalam lingkungan terisolasi, membuat pengelolaan dan penerapan aplikasi lebih mudah.
-    <br>
+    <br><br>
 5.  Testing
     <br> - Functional testing
     Memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.
@@ -149,24 +150,24 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
     - Configuration Datasource : menghubungkan aplikasi dengan backend untuk mengambil dan mengirim data. Dan local data source yang akan menyimpan pada storage perangkat
 <br><br>
 3.  Backend Developer: Handaru, Iqbal
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfS4LcmMBxHtaIOQbLabi8crJT3BIwOxruB2wg664JLVgY3WWoPSGADai2fes0EwAE7jIA7BkJD9o4wNn5sP8kYKjBLPtTJ2HaC4OaNFOYS0XuN5Iqddcz6fqdaiATphwdgdViQEcsMKpoWAPaeRauf-N8C?key=6Eojv_aTg9PSKZFsU8qskA)
-<br>
-    - Desain Skema Basis Data: Merancang skema basis data yang efisien untuk menyimpan informasi.<br>
-    - Pengembangan API : Membuat REST API menggunakan express js.<br>
-    - Konfigurasi JWT : mengautentikasi pengguna dan memastikan bahwa hanya pengguna yang sah yang dapat mengakses API.<br>
-    - Konfigurasi websocket : Mengkonfigurasi agar aplikasi untuk menerima pembaruan data secara instan tanpa perlu melakukan polling ke server secara terus-menerus.<br><br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfS4LcmMBxHtaIOQbLabi8crJT3BIwOxruB2wg664JLVgY3WWoPSGADai2fes0EwAE7jIA7BkJD9o4wNn5sP8kYKjBLPtTJ2HaC4OaNFOYS0XuN5Iqddcz6fqdaiATphwdgdViQEcsMKpoWAPaeRauf-N8C?key=6Eojv_aTg9PSKZFsU8qskA)<br>
+      - Desain Skema Basis Data: Merancang skema basis data yang efisien untuk menyimpan informasi.<br>
+      - Pengembangan API : Membuat REST API menggunakan express js.<br>
+      - Konfigurasi JWT : mengautentikasi pengguna dan memastikan bahwa hanya pengguna yang sah yang dapat mengakses API.<br>
+      - Konfigurasi websocket : Mengkonfigurasi agar aplikasi untuk menerima pembaruan data secara instan tanpa perlu melakukan polling ke server secara terus-menerus.
+      <br><br>
 
 4.  Deployment : Handaru, Iqbal
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfoiQu7LfcHpvQMkpBiIUovLZ7THWQK8EE9LpBPZE2l-lUbLU_0vk92ETK9LsV7w3oyuznaZ-AXOq3ttoitPHJ0BP0i7BPT2BSFDiBeZzEJymgYSMC2-yCWaWyWK6ZBDNR9BKbrUMK2YFd7U2gQKxyPRvA?key=6Eojv_aTg9PSKZFsU8qskA)
 <br>
-    - Memisahkan tiap service di server (microservice) : Memecah aplikasi menjadi beberapa layanan kecil yang dapat diatur secara independen, meningkatkan skalabilitas dan fleksibilitas.
-    - Konfigurasi docker image : Mengkonfigurasi dependency-dependency yang diperlukan oleh tiap service.
-    - Konfigurasi docker compose: Mengkonfigurasi agar semua container service dapat dijalankan dengan 1 command.
+      - Memisahkan tiap service di server (microservice) : Memecah aplikasi menjadi beberapa layanan kecil yang dapat diatur secara independen, meningkatkan skalabilitas dan fleksibilitas.<br>
+      - Konfigurasi docker image : Mengkonfigurasi dependency-dependency yang diperlukan oleh tiap service.<br>
+      - Konfigurasi docker compose: Mengkonfigurasi agar semua container service dapat dijalankan dengan 1 command.<br>
 <br><br>
 5.  Testing : Awal, Zahro, Vira, Denti
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeZDgncNt1-8mRY2xZyHeUDFdkJg5jqm56Bj_n9ALA3ivV_vKXVxrBws1bRqfzuOhWW-SP6bj_IvAiKAEJteT552pc1TBwyxlPqlTylneNbUtuCAX5K7TFi5JbF6iELFD0HmaI3QTrymT92iTAV74vzfzAB?key=6Eojv_aTg9PSKZFsU8qskA)
-    - Memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.
-    - Memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung.
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeZDgncNt1-8mRY2xZyHeUDFdkJg5jqm56Bj_n9ALA3ivV_vKXVxrBws1bRqfzuOhWW-SP6bj_IvAiKAEJteT552pc1TBwyxlPqlTylneNbUtuCAX5K7TFi5JbF6iELFD0HmaI3QTrymT92iTAV74vzfzAB?key=6Eojv_aTg9PSKZFsU8qskA)<br>
+      - Memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.<br>
+      - Memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung.
 <br><br>
 
 LINK BACKLOG :
