@@ -373,5 +373,8 @@ Result :<br>
 <br><br>
 
 ## Fuctional testing<hr>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeSQNyAuhTy4LfWY14lA5PbRMbkEPtUgAFdTv0NoACHha5bm0UIJZZ3YOMFGQ8Z5Hnd7pT4Lsifp7h7Cm0aG5RYp_p36lAT7fJz_2rwIXA50O4WdPGQbT_8LUWrm6zj4LqSKqUfElL5fv4ZZtznfRsFDnA4?key=6Eojv_aTg9PSKZFsU8qskA)<br><br>
+Link dokumentasi testing : [https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1NH2sAu29KwanPqM7hB3uTTyycXG-9GSt6wTgIJ2ZwXo/edit?usp=sharing)
 
+<br><br>
 # Kesimpulan
