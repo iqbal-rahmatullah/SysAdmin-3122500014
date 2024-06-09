@@ -378,3 +378,15 @@ Link dokumentasi testing : [https://docs.google.com/spreadsheets/d/1NH2sAu29Kwan
 
 <br><br>
 # Kesimpulan
+KonsulDok adalah aplikasi mobile berbasis Flutter yang bertujuan membantu penderita sakit dalam merencanakan janji temu dengan dokter. Aplikasi ini menawarkan fitur pemesanan dokter dengan mudah serta memungkinkan pasien untuk menghubungi dokter melalui fitur chat real-time. Backend aplikasi menggunakan ExpressJS. Docker Engine digunakan untuk pengembangan, dan menjalankan aplikasi dalam kontainer, memastikan portabilitas, isolasi, dan kemudahan deployment.
+<br>
+Pengembangan aplikasi ini melibatkan beberapa tahapan, mulai dari perencanaan dan analisis, desain dan prototyping, pengembangan dan implementasi, hingga deployment dan testing. Tim pengembangan aplikasi menerjemahkan desain UI ke dalam kode Flutter, serta pengembang backend membuat REST API, konfigurasi JWT, dan Websocket. Docker digunakan untuk memecah aplikasi menjadi layanan-layanan kecil yang dapat diatur secara independen(microservice).
+<br>
+Dari hasil testing di atas dapat disimpulkan bahwa containerization aplikasi KonsulDok berjalan dengan baik :
+-   Dimana tiap service dapat berjalan dengan baik secara independen.
+-   Api_gateway yang dibuat juga dapat berjalan dengan baik untuk melakukan hit ke endpoint dari tiap service.
+-   Adminer yang digunakan sebagi user interface untuk memanajemen database dapat melakukan login & create database
+-   Semua fitur berjalan dengan baik dengan response yang sesuai
+-   Docker compose run → 9/9 service   
+-   Docker compose restart → 9/9 service
+-   Docker compose down → 9/9 service
