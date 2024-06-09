@@ -60,6 +60,7 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 - [Tahapan Pelaksaan](#tahapan-pelaksanaan)
 - [Tim Dan Tugas](#tim-dan-tugas)
 - [Implementasi](#implementasi)
+- [Sistem Testing](#sistem-testing)
 - [Kesimpulan](#kesimpulan)
 
 <hr>
@@ -205,5 +206,172 @@ Testing Installation: Memastikan aplikasi dapat diinstal dengan benar di berbaga
 Output: Instalasi aplikasi yang berhasil<br>
 Functional Testing: Melakukan pengujian fungsional untuk memastikan semua fitur aplikasi berfungsi dengan benar.
 Output: Hasil pengujian fungsional yang baik<br><br>
+
+# Sistem testing<br>
+## Installation testing<hr>
+
+1.  Konfigurasi docker image  
+    Service appointment, doctor, user, chat, rating embutuhkan dependecy yang sama, yaitu melakukan npm install dan npm generate prisma
+    ```
+    FROM node:20-alpine
+    WORKDIR /app
+    COPY package*.json ./
+    RUN npm install
+    COPY prisma ./prisma
+    RUN npx prisma generate
+    COPY . .
+    EXPOSE 8000 //sesuaikan port masing-masih
+    CMD ["npm", "start"]
+    ```
+    <br>
+    Untuk api gateway berbeda karena tidak membutuhkan ORM, jadi hanya menjalankan npm install
+
+    ```
+    FROM node:20-alpine
+    WORKDIR /app
+    COPY package*.json ./
+    RUN npm install
+    COPY . .
+    EXPOSE 3000
+    CMD ["npm", "start"]
+    ```
+<br><br>
+2.  Konfigurasi docker compose
+
+```  
+services:
+  mysql:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    networks:
+      - backend
+
+  api_gateway:
+    container_name: api_gateway
+    build: ./api_gateway
+    ports:
+      - "3000:3000"
+    networks:
+      - backend
+    environment:
+      - URL_SERVICE_USER=http://142.93.14.210:4000
+      - URL_SERVICE_DOCTOR=http://142.93.14.210:6000
+      - URL_SERVICE_CHAT=http://142.93.14.210:7001
+      - URL_SERVICE_RATING=http://142.93.14.210:5001
+      - URL_SERVICE_APPOINTMENT=http://142.93.14.210:8000
+
+  service_user:
+    container_name: service_user
+    build: ./service_user
+    ports:
+      - "4000:4000"
+    networks:
+      - backend
+    environment:
+      - DB_NAME=meet_doctor
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - DATABASE_URL=mysql://root:password@db/meet_doctor
+
+  service_chat:
+    container_name: service_chat
+    build: ./service_chat
+    ports:
+      - "7001:7001"
+    networks:
+      - backend
+    environment:
+      - DB_NAME=meet_doctor
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - DATABASE_URL=mysql://root:password@db/meet_doctor
+
+  service_rating:
+    container_name: service_rating
+    build: ./service_rating
+    ports:
+      - "5001:5001"
+    networks:
+      - backend
+    environment:
+      - DB_NAME=meet_doctor
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - DATABASE_URL=mysql://root:password@db/meet_doctor
+
+  service_appointment:
+    container_name: service_appointment
+    build: ./service_appointment
+    ports:
+      - "8000:8000"
+    networks:
+      - backend
+    environment:
+      - DB_NAME=meet_doctor
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - DATABASE_URL=mysql://root:password@db/meet_doctor
+
+  service_doctor:
+    container_name: service_doctor
+    build: ./service_doctor
+    ports:
+      - "6000:6000"
+    networks:
+      - backend
+    environment:
+      - DB_NAME=meet_doctor
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - DATABASE_URL=mysql://root:password@db/meet_doctor
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - "8081:8080"
+    networks:
+      - backend
+    environment:
+      - DB_NAME=meet_doctor
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - DATABASE_URL=mysql://root:password@db/meet_doctor
+
+networks:
+  backend:
+    driver: bridge
+```
+<br><br>
+3.  Migration database
+-   Pada docker compose telah menginstall admine yang digunakan untuk Memanjemen database dengan interface → masuk ke sini dengan port 8081
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcQhLcvFoDgTXjLExG0asMAmLjtfQSwMYcu7lcqQ5yk99lu9aoZpx3QMdpMEJajhYQ2EvC4JUNV7fhgyasImjGJQ6NsEGjpPycO6ZNMIZV4v_hpTAvZKxRQtUAeR9_xY1ATrrFbKaVEiV2W5DOfNako-0E?key=6Eojv_aTg9PSKZFsU8qskA)<br>
+-   Masuk dengan -u root -p password<br>
+-   Buat database meet_doctor<br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcwKEmpqaTZQlnLgxSKoRXYWgW_QNAgOvSxED2TxJdzlo6SgZ2FNdXN-Sn-w2dgTJmaIygeuyHmGnSVPscGWC2v6r0nXuz3_C6vUuGxNIKPwowB705kyM5jx59FuPLAtxRzVkT22LJK0KDjtz1Rc2_rNtNH?key=6Eojv_aTg9PSKZFsU8qskA)<br>
+-   Masuk ke bash dari script migration di container service user → docker exec -it service_user sh<br>
+-   Jalankan npx prisma migrate dev<br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdmtlF0o1Zk6k7oVRMDokvDYY3wBciQxItFPUK-XCqy2nNlQGurj1-1ySgA-6lsF5eUiqaFPPcepPAvKCcgMqe1TvajVhPVrC-OYiLY2ed-dV6_pex6nhvGPvkAZ7ouZ1eaL35_bnrNkyC8ou1cy10-hR8d?key=6Eojv_aTg9PSKZFsU8qskA)<br>
+Result :<br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXe9HeU11zGDLekCqJ6qTIVhIip1OBtF0QoIme_ypayNB7AzXU_MykNxDABK7EluvZp63pl6btp-Ja1kvdXm6JK6HgLstLHLlehiu9G6OgWRVVgGyWDDB-kwjZIgMuWKnydOaxZEEcBW0A0Z0nec4Fa5W_pf?key=6Eojv_aTg9PSKZFsU8qskA)<br><br>
+4.  Up Service → docker compose up -d  
+    ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcj7G0KQ_PixbNS-oVaigQFKOUNRAjB_XVPI1XltZgwfWbNLuDuWmsKZqt7lCApqDpSF26t_9Plij5GKVrf-0iFGSwQnczNwyNqjl7R-NiFWpt5_SRtBf-a6CC9fiBn3tAPQYYJ0R7ovvjwyQhYE9MXcWGt?key=6Eojv_aTg9PSKZFsU8qskA)<br><br>
+5.  Restart service → docker compose restart  
+    ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXd5kbpu7jlrt6RKiCvp8f6LyRsiIltYClgml0BP1EyNoJl8Iv-K2WmnTOmbXbnNcYlbyA7fvLSkAg2APEhMMWPrP3neu8xhPK6qeyS6EGIrRWBak7mPVkPZPWfC8_xsXAcENEZejRhCVO_mVyd1UcSPQzrk?key=6Eojv_aTg9PSKZFsU8qskA)<br><br>
+6. Down service → docker compose down  
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcaVRNf0DVfMLyldsCkALkTzJuDvjIrQSmpEJhmzWT4QsPHvPK8KhrP7l8h6vopWRKGx5R6jBz2RE0zzHn87DYuoaSRpIdYVBPtYtB1V12RitfSMEBVLAhcNcnJbJC8XjGLNXtg_r5RE5c5Cy0pSufdvLpe?key=6Eojv_aTg9PSKZFsU8qskA)
+<br><br>
+
+## Fuctional testing<hr>
 
 # Kesimpulan
