@@ -53,7 +53,7 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 
 ## Daftar Isi
 
-- [Daftar Isi](#daftar-isi)
+- [Abstrak](#abstrak)
 - [Pendahuluan](#pendahuluan)
 - [Ruang Lingkup](#ruang-lingkup)
 - [System Architecture](#system-architecture)
@@ -62,7 +62,7 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 
 <hr>
 
-## Pendahuluan
+## Pendahuluan<hr>
 
 Dalam era digital saat ini, teknologi informasi telah merambah ke berbagai aspek kehidupan, termasuk sektor kesehatan. Salah satu inovasi penting dalam bidang ini adalah aplikasi Doctor Appointment. Aplikasi ini dirancang untuk memudahkan pasien dalam mengatur pertemuan dengan dokter tanpa harus melalui proses yang panjang dan rumit. Dengan hadirnya aplikasi Doctor Appointment, baik pasien maupun tenaga medis dapat mengelola waktu dan sumber daya dengan lebih efisien.
 
@@ -72,13 +72,13 @@ Selain itu, aplikasi ini juga memberikan manfaat signifikan bagi klinik dan ruma
 
 Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang menjawab kebutuhan akan layanan kesehatan yang lebih cepat, aman, dan efisien. Dengan terus berkembangnya teknologi dan meningkatnya kebutuhan masyarakat akan layanan kesehatan yang lebih baik, aplikasi ini memiliki potensi besar untuk terus berkembang dan memberikan kontribusi yang signifikan dalam meningkatkan kualitas pelayanan kesehatan di masa mendatang.
 
-## Ruang Lingkup
+## Ruang Lingkup<hr>
 
 KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberikan pengguna akses mudah ke berbagai fitur terkait doctor appointment. Bagian backend dari aplikasi ini dikembangkan dengan menggunakan framework ExpressJS, yang mengelola segal interaksi dengan database untuk penyimpanan dan pengambilan data. Aplikasi ini memanfaatkan MySQL sebagai database, yang berfungsi untuk menyimpan dan mengakses data, serta merespons permintaan dari pengguna. Server bertindak sebagai perantara antara aplikasi mobile, backend, dan database, menerima permintaan dari pengguna, meneruskannya ke backend dan database, dan kemudian mengirimkan respons kembali kepada pengguna
 
-## System Architecture
+## Desain Sistem<hr>
 
-**![](https://lh7-us.googleusercontent.com/MakIIki57u_Tk3sO8DW6e3Nx1POS-fchx2G4tk3gg75DIlQl30Qo18Gp6utcBdSK0puVZhe6ivSiwScnRmtsiRumCZn4aKMqVEfruqA3SKKpjr92HHwog0oP3PMX8dsMKCdaDXm9QR5LJgXF_jXhVP8)**
+**![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdRUK4HWf4FH_e5CZJrTeETiill16ikDVRK11Ym8Kf8zAOb-6zxzohdC1OmpldgNqpyvP0HB95jSY6PLkBN9u7ma4JxheMzx8De_ULP6mwWLYOSXQHDI2UG0CtSXuwMSOz9nW0ejK1lfFHywtMr1VJbJwul?key=6Eojv_aTg9PSKZFsU8qskA)**
 
 ## Tahapan pelaksanaan
 
@@ -126,33 +126,50 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
     <br> - Intallation testinng
     Memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung.
 
-## Tim Dan Tugas
+## Tim Dan Tugas<hr>
 
 1.  UI/UX: Awal, Zahro, Vira
+    ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXewVwuSFCwjrg0pIJy5TZJXHTpzaHeQZmHXqGmZP9pbUDVV6gG8pfM0HbuXYPqtuLOVBsgRfXSO29FKSZKkfLOZUCmAcJTXoyooiYygMsS_U2MGQrCfeXTaGlUtLHE0Ol6TeEwuDY0LksS-mZx-ngcUlaw?key=6Eojv_aTg9PSKZFsU8qskA)
+    <br>
 
-- Riset Pengguna
-  1.  Studi Pengguna: Meneliti bagaimana pasien saat ini membuat janji temu dan kesulitan apa yang mereka hadapi.
-  2.  User Persona: Membuat profil persona pengguna berdasarkan data riset untuk menggambarkan target audiens secara lebih jelas.
+- Riset Pengguna 
+  1. Studi Pengguna: Meneliti bagaimana pasien saat ini membuat janji temu dan kesulitan apa yang mereka hadapi. 
+  2. User Persona: Membuat profil persona pengguna berdasarkan data riset untuk menggambarkan target audiens secara lebih jelas.
+  <br>
 - UI Design
   1.  Wireframe: Membuat wireframe dari layar utama aplikasi, termasuk proses pencarian dokter, pemilihan waktu janji temu, dan konfirmasi.
   2.  Mockup: Membuat tampilan aplikasi
   3.  Prototype: Membuat prototipe interaktif yang memungkinkan pengguna menguji proses penjadwalan janji temu.
+<br><br>
+2.  Mobile Developer: All (Iqbal, Awal, Handaru, Zahro, Denti, Vira)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcasg4Gz-CcFqh5uq1QCUiOepYX7otfrDg_E_LNAFv_lv7QfLtpLnirhUNYVz7veSKvEBVbEkWHVGz_G13rY9iyVNb59x-dEz7dXekbxAd6XARdVlmFDg20RpwZvTJacWVlyPputj0NZ5wluNQ81IHZP5H5?key=6Eojv_aTg9PSKZFsU8qskA)
+    - Coding: Menulis kode menggunakan bahasa pemrograman dart (Slicing mockup)<br>
+    - UI Implementation: Mengimplementasikan desain UI/UX yang diberikan oleh desainer, memastikan antarmuka aplikasi responsif dan intuitif<br>
+    - State management : mengatur bagaimana data dalam aplikasi dikelola dan diubah, serta memastikan sinkronisasi data yang efisien antar komponen UI.<br>
+    - Configuration Datasource : menghubungkan aplikasi dengan backend untuk mengambil dan mengirim data. Dan local data source yang akan menyimpan pada storage perangkat
+<br><br>
+3.  Backend Developer: Handaru, Iqbal
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfS4LcmMBxHtaIOQbLabi8crJT3BIwOxruB2wg664JLVgY3WWoPSGADai2fes0EwAE7jIA7BkJD9o4wNn5sP8kYKjBLPtTJ2HaC4OaNFOYS0XuN5Iqddcz6fqdaiATphwdgdViQEcsMKpoWAPaeRauf-N8C?key=6Eojv_aTg9PSKZFsU8qskA)
+<br>
+    - Desain Skema Basis Data: Merancang skema basis data yang efisien untuk menyimpan informasi.<br>
+    - Pengembangan API : Membuat REST API menggunakan express js.<br>
+    - Konfigurasi JWT : mengautentikasi pengguna dan memastikan bahwa hanya pengguna yang sah yang dapat mengakses API.<br>
+    - Konfigurasi websocket : Mengkonfigurasi agar aplikasi untuk menerima pembaruan data secara instan tanpa perlu melakukan polling ke server secara terus-menerus.<br><br>
 
-2. Mobile Developer: All (Iqbal, Awal, Handaru, Zahro, Denti, Vira)
+4.  Deployment : Handaru, Iqbal
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfoiQu7LfcHpvQMkpBiIUovLZ7THWQK8EE9LpBPZE2l-lUbLU_0vk92ETK9LsV7w3oyuznaZ-AXOq3ttoitPHJ0BP0i7BPT2BSFDiBeZzEJymgYSMC2-yCWaWyWK6ZBDNR9BKbrUMK2YFd7U2gQKxyPRvA?key=6Eojv_aTg9PSKZFsU8qskA)
+<br>
+    - Memisahkan tiap service di server (microservice) : Memecah aplikasi menjadi beberapa layanan kecil yang dapat diatur secara independen, meningkatkan skalabilitas dan fleksibilitas.
+    - Konfigurasi docker image : Mengkonfigurasi dependency-dependency yang diperlukan oleh tiap service.
+    - Konfigurasi docker compose: Mengkonfigurasi agar semua container service dapat dijalankan dengan 1 command.
+<br><br>
+5.  Testing : Awal, Zahro, Vira, Denti
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeZDgncNt1-8mRY2xZyHeUDFdkJg5jqm56Bj_n9ALA3ivV_vKXVxrBws1bRqfzuOhWW-SP6bj_IvAiKAEJteT552pc1TBwyxlPqlTylneNbUtuCAX5K7TFi5JbF6iELFD0HmaI3QTrymT92iTAV74vzfzAB?key=6Eojv_aTg9PSKZFsU8qskA)
+    - Memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.
+    - Memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung.
+<br><br>
 
-   - Coding: Menulis kode menggunakan bahasa pemrograman seperti dart (Slicing mockup)
-   - UI Implementation: Mengimplementasikan desain UI/UX yang diberikan oleh desainer, memastikan antarmuka aplikasi responsif dan intuitif
-
-3. Backend Developer: Handaru, Iqbal
-   - Desain Skema Basis Data: Merancang skema basis data yang efisien untuk menyimpan informasi dokter, pasien, jadwal janji temu, dan data lainnya.
-   - Pengembangan API
-   - Keamanan dan Autentikasi
-   - Pemeliharaan dan Optimasi Server
-
-LINK BACKLOG
-
+LINK BACKLOG :
 [https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing)
 
 ## Kesimpulan
-
-Hasil testing nantinya
