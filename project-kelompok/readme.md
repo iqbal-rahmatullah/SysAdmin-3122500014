@@ -59,6 +59,8 @@ KONSULDOK: DOCTOR APPOINTMENT  APPLICATION</h1>
 - [System Architecture](#system-architecture)
 - [Tahapan Pelaksaan](#tahapan-pelaksanaan)
 - [Tim Dan Tugas](#tim-dan-tugas)
+- [Implementasi](#implementasi)
+- [Kesimpulan](#kesimpulan)
 
 <hr>
 
@@ -171,5 +173,37 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
 
 LINK BACKLOG :
 [https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1tNTmUxcVCjaUMy0bOKoLLYqSv6KgNt2oU-kUH2zEUjQ/edit?usp=sharing)
+
+## Implementasi<hr>
+-   Tahap 1: Perencanaan & Analisis (Minggu 1-2)<br>
+Tujuan & Sasaran: Mengidentifikasi dan mendokumentasikan tujuan serta sasaran implementasi KonsulDok.<br>  
+Mengidentifikasi Target Pengguna:
+Melakukan analisis kebutuhan, dan ekspektasi aplikasi KonsulDok.
+Output: Profil target pengguna yang mendetail.<br>
+Rancangan Database:Mendesain skema basis data yang efisien untuk menyimpan informasi pengguna, janji temu, rekam medis, dan data terkait lainnya.  
+Output: Desain skema basis data.<br>
+Pemilihan Teknologi: Memilih teknologi yang akan digunakan untuk mengembangkan aplikasi KonsulDok, mempertimbangkan skalabilitas, keamanan, dan kemudahan penggunaan.  
+Output: Daftar teknologi terpilih (Flutter, ExpressJS, Prisma, MySQL, Docker).<br><br>
+
+-   Tahap 2: Desain & Prototyping (Minggu 3-5)<br>
+Desain UI/UX: Membuat wireframe dan mockup antarmuka pengguna, serta prototipe yang interaktif.
+Output: Desain antarmuka pengguna yang estetis.<br>
+Pengembangan Konten: Membuat konten dan fitur aplikasi KonsulDok sesuai dengan kebutuhan pengguna.
+Output: Konten dan fitur yang sesuai dengan standar aplikasi janji temu dokter.<br><br>
+  
+-   Tahap 3: Pengembangan & Implementasi (Minggu 5-6)<br>
+Pengembangan FE Mobile: Menerjemahkan desain UI dari Figma ke dalam kode Flutter, termasuk pembuatan komponen reusable dan konfigurasi state management menggunakan Bloc dan Cubit.
+Output: Aplikasi mobile KonsulDok<br>
+Pengembangan BE: Mengembangkan REST API menggunakan ExpressJS, mengonfigurasi JWT untuk autentikasi, dan WebSocket untuk komunikasi real-time.
+Output: Rest API<br>
+Containerization Docker: Memecah aplikasi menjadi beberapa layanan kecil (microservices) dan mengonfigurasi Docker untuk setiap layanan.
+Output: Layanan backend yang terkontainerisasi dan mudah dikelola.<br><br>
+
+
+-   Tahap 4: Testing & Deployment (Minggu 6)<br>
+Testing Installation: Memastikan aplikasi dapat diinstal dengan benar di berbagai lingkungan dan perangkat yang didukung.
+Output: Instalasi aplikasi yang berhasil<br>
+Functional Testing: Melakukan pengujian fungsional untuk memastikan semua fitur aplikasi berfungsi dengan benar.
+Output: Hasil pengujian fungsional yang baik<br><br>
 
 ## Kesimpulan
