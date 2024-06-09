@@ -80,14 +80,10 @@ Berikut untuk pembagian port dari tiap-tiap service yang ada :<br>
 <br><br>
 
 # Pendahuluan
-
-Dalam era digital saat ini, teknologi informasi telah merambah ke berbagai aspek kehidupan, termasuk sektor kesehatan. Salah satu inovasi penting dalam bidang ini adalah aplikasi Doctor Appointment. Aplikasi ini dirancang untuk memudahkan pasien dalam mengatur pertemuan dengan dokter tanpa harus melalui proses yang panjang dan rumit. Dengan hadirnya aplikasi Doctor Appointment, baik pasien maupun tenaga medis dapat mengelola waktu dan sumber daya dengan lebih efisien.
-
-Aplikasi Doctor Appointment tidak hanya memberikan kemudahan bagi pasien untuk membuat jadwal kunjungan, tetapi juga menawarkan berbagai fitur tambahan seperti pengingat jadwal, informasi detail mengenai dokter dan fasilitas kesehatan, serta opsi konsultasi jarak jauh atau telemedicine. Hal ini sangat relevan di masa pandemi COVID-19, di mana interaksi langsung antara pasien dan dokter perlu diminimalkan untuk mengurangi risiko penularan.
-
-Selain itu, aplikasi ini juga memberikan manfaat signifikan bagi klinik dan rumah sakit dalam mengelola jadwal dokter dan mengurangi antrean di ruang tunggu. Data dan rekam medis yang tersimpan secara digital juga memudahkan tenaga medis dalam memantau riwayat kesehatan pasien secara akurat dan cepat.
-
-Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi inovatif yang menjawab kebutuhan akan layanan kesehatan yang lebih cepat, aman, dan efisien. Dengan terus berkembangnya teknologi dan meningkatnya kebutuhan masyarakat akan layanan kesehatan yang lebih baik, aplikasi ini memiliki potensi besar untuk terus berkembang dan memberikan kontribusi yang signifikan dalam meningkatkan kualitas pelayanan kesehatan di masa mendatang.
+Dalam era digital saat ini, teknologi informasi telah merambah ke berbagai aspek kehidupan, termasuk sektor kesehatan. Salah satu hal penting dalam bidang ini adalah aplikasi Doctor Appointment. Aplikasi ini dirancang untuk memudahkan pasien dalam mengatur pertemuan dengan dokter tanpa harus melalui proses yang panjang dan rumit. Dengan hadirnya aplikasi Doctor Appointment, baik pasien maupun tenaga medis dapat mengelola waktu dan sumber daya dengan lebih efisien.<br><br>
+Aplikasi Doctor Appointment tidak hanya memberikan kemudahan bagi pasien untuk membuat jadwal kunjungan, tetapi juga menawarkan berbagai fitur tambahan seperti informasi detail mengenai dokter, serta opsi konsultasi melalui fitur chat.<br><br>
+Selain itu, aplikasi ini juga memberikan manfaat signifikan bagi klinik dan rumah sakit dalam mengelola jadwal dokter dan mengurangi antrean di ruang tunggu. Data dan rekam medis yang tersimpan secara digital juga memudahkan tenaga medis dalam memantau riwayat kesehatan pasien secara akurat dan cepat.<br><br>
+Secara keseluruhan, aplikasi Doctor Appointment merupakan solusi yang menjawab kebutuhan akan layanan kesehatan yang lebih cepat, aman, dan efisien. Dengan terus berkembangnya teknologi dan meningkatnya kebutuhan masyarakat akan layanan kesehatan yang lebih baik, aplikasi ini memiliki potensi besar untuk terus berkembang dan memberikan kontribusi yang signifikan dalam meningkatkan kualitas pelayanan kesehatan di masa mendatang.
 
 # Ruang Lingkup
 
