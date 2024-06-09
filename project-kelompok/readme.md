@@ -163,8 +163,8 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
       - Konfigurasi docker image : Mengkonfigurasi dependency-dependency yang diperlukan oleh tiap service.<br>
       - Konfigurasi docker compose: Mengkonfigurasi agar semua container service dapat dijalankan dengan 1 command.<br>
 <br><br>
-5.  Testing : Awal, Zahro, Vira, Denti
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeZDgncNt1-8mRY2xZyHeUDFdkJg5jqm56Bj_n9ALA3ivV_vKXVxrBws1bRqfzuOhWW-SP6bj_IvAiKAEJteT552pc1TBwyxlPqlTylneNbUtuCAX5K7TFi5JbF6iELFD0HmaI3QTrymT92iTAV74vzfzAB?key=6Eojv_aTg9PSKZFsU8qskA)
+5.  Testing : Awal, Zahro, Vira, Denti<br>
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeZDgncNt1-8mRY2xZyHeUDFdkJg5jqm56Bj_n9ALA3ivV_vKXVxrBws1bRqfzuOhWW-SP6bj_IvAiKAEJteT552pc1TBwyxlPqlTylneNbUtuCAX5K7TFi5JbF6iELFD0HmaI3QTrymT92iTAV74vzfzAB?key=6Eojv_aTg9PSKZFsU8qskA)<br>
       - Memastikan bahwa setiap fungsi dari perangkat lunak bekerja sesuai dengan persyaratan yang telah ditetapkan.<br>
       - Memastikan bahwa aplikasi dapat diinstal dengan benar pada berbagai lingkungan dan perangkat yang didukung.<br>
 <br><br>
