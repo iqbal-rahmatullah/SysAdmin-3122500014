@@ -91,7 +91,7 @@ KonsulDok adalah aplikasi mobile yang dibangun menggunakan Flutter dan memberika
 
 # Desain Sistem
 
-**![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdRUK4HWf4FH_e5CZJrTeETiill16ikDVRK11Ym8Kf8zAOb-6zxzohdC1OmpldgNqpyvP0HB95jSY6PLkBN9u7ma4JxheMzx8De_ULP6mwWLYOSXQHDI2UG0CtSXuwMSOz9nW0ejK1lfFHywtMr1VJbJwul?key=6Eojv_aTg9PSKZFsU8qskA)**
+**![](https://lh7-us.googleusercontent.com/docsz/AD_4nXf_mxU9Q1WPJ9EmbYluEy3quOps_B3Zi5OjPr95PZvV24j_tn4JC7TvfEjHKcVsj5hzeIBHfLSkVgX1cFhmEtkVb4IWmWIT6KpP08PnWRtP7mm1I6DT0tPv_5IhtVljPT8lhITkpF9iPE5tXeMQRp_iDOyM?key=f0ajtpqy-YMg5H0LL2hqaQ)**
 
 # Tahapan pelaksanaan
 
